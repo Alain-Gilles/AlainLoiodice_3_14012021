@@ -14,7 +14,6 @@
         <header>
             <a href="#"class="affichefleche"><i class="fas fa-arrow-left"></i></a>
             <div class="entetelogo">
-                <!--<i class="fas fa-arrow-left"></i>-->
                 <img class="logoheader" src="public/img/logos/ohmyfood@2x.svg" alt="logo ohmayfood"/>
             </div>
         </header>
@@ -22,12 +21,12 @@
             <form class="rechercheform">
                 <div class="rechercher">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" id="rechercheville" name="rechercheville" Value="Paris,Belleville">   
+                    <input type="text" id="rechercheville" name="rechercheville" Value="Paris,Belleville" maxlength="20" size="20">   
                 </div>
             </form>
             <div class="presentation">
                 <div class="baseline">
-                    <h1>Réserver le menu qui</h1>
+                    <h1>Réservez le menu qui</h1>
                     <h1>vous convient</h1>
                 </div>
                 <div class="soustitre">
@@ -35,7 +34,7 @@
                     <p>sélectionnés par nos soins</p>
                 </div>
                 <div class="btnexplorer">
-                    <button name="explorez" type="button" onclick="">Explorez nos restaurants</button>
+                    <button class="btn" name="explorez" type="button" onclick="">Explorez nos restaurants</button>
                 </div>
             </div>
         </section>

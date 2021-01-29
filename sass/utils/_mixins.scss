@@ -1,0 +1,18 @@
+@mixin border($colour:$colour-secondary) {
+    border: .1rem solid $colour;
+    border-radius:10rem;
+}
+
+@mixin btn {
+    padding: $btn-paddingv $btn-paddingh;
+    @include border;
+    color: $btn-color;
+    font-weight: bold;
+    /*background: $colour-secondary;*/
+    background:linear-gradient(to bottom, $colour-secondary 10%, lighten($colour-primary,10) 90%);
+    box-shadow:0.2rem 0.2rem 0rem $colour-primary;
+    cursor: pointer;
+    &:hover{
+        background: $colour-primary;
+    }
+  }

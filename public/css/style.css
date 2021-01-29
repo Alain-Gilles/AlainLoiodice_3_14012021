@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Shrikhand';
-  src: local("Shrikhand Regular"), local("Shrikhand-Regular"), url("polices/Shrikhand-Regular.woff2") format("woff2"), url("polices/Shrikhand-Regular.woff") format("woff"), url("polices/Shrikhand-Regular.ttf") format("truetype");
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  src: local("Shrikhand Regular"), local("Shrikhand-Regular"), url("polices/Shrikhand-Regular.woff2") format("woff2"), url("polices/Shrikhand-Regular.woff") format("woff"), url("polices/Shrikhand-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: 'Roboto';
@@ -14,23 +14,28 @@
 body {
   font-family: 'Roboto', 'Shrikhand','Trebuchet MS', Arial, sans-serif;
   color: black;
+  font-size: 14px;
   font-size: 1.4rem;
   font-weight: 100;
-  line-height: 1.7;
+  line-height: 1.2;
 }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 2.2rem;
-  font-style: italic;
+  /*font-family: 'Shrikhand', sans-serif;*/
+  font-family: 'Roboto' , Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-size: 2.0rem;
+  font-style: normal;
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Shrikhand', sans-serif;*/
+  font-family: 'Roboto' , Arial, sans-serif;
   font-weight: 900;
-  font-size: 1.6rem;
-  font-style: italic;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-style: normal;
 }
 
 *,
@@ -47,14 +52,29 @@ html {
 
 body {
   box-sizing: border-box;
-  background: white;
+  background: #fff;
   max-width: 1590px;
   margin: auto;
 }
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: 0.1rem solid #FF79DA;
+  border-radius: 10rem;
+  color: white;
+  font-weight: bold;
+  /*background: $colour-secondary;*/
+  background: linear-gradient(to bottom, #FF79DA 10%, #ae80e5 90%);
+  box-shadow: 0.2rem 0.2rem 0rem #9356DC;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #9356DC;
 }
 
 header {
@@ -81,6 +101,63 @@ header a.affichefleche {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+}
+
+.hautpage {
+  width: 100%;
+  /*background-color:$colour-fondgris;*/
+  background-color: #f2f2f2;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+.rechercheform {
+  width: 100%;
+  background-color: #e5e5e5;
+}
+
+.rechercher {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* icone  marqueur de lieu */
+.fa-map-marker-alt {
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* zone input recherche ville */
+input[name="rechercheville"] {
+  padding: 10px;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border: 0;
+  outline: unset;
+  background-color: #e5e5e5;
+}
+
+.baseline {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.baseline h1 {
+  text-align: center;
+}
+
+.soustitre {
+  margin-bottom: 20px;
+}
+.soustitre p {
+  text-align: center;
+}
+
+.btnexplorer {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

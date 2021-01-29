@@ -23,3 +23,62 @@ header {
     justify-content:center;
     margin-top:10px;
 }
+
+.hautpage {
+    width:100%;
+    /*background-color:$colour-fondgris;*/
+    background-color: lighten($colour-fondgris,$pourcentage-fondlighten);
+    margin-top:15px;
+    padding-bottom:20px;
+}
+
+.rechercheform {
+    width:100%;
+    background-color: darken($colour-fondgris,$pourcentage-fonddarken);
+}
+
+.rechercher {
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+}
+
+/* icone  marqueur de lieu */
+
+.fa-map-marker-alt {
+    color: lighten($color-police,30);
+    font-weight:bold;
+    font-size:2rem;
+}
+
+/* zone input recherche ville */
+
+input[name="rechercheville"] {
+    padding:10px;
+    color: lighten($color-police,30);
+    font-weight:bold;
+    font-size:1.8rem;
+    border:0;   
+    outline:unset;
+    background-color: darken($colour-fondgris,$pourcentage-fonddarken);
+}
+
+.baseline {
+    margin-top:20px;
+    margin-bottom:20px;
+    h1 {
+    text-align:center;
+    }
+}
+
+.soustitre {
+    margin-bottom:20px;
+    p {
+    text-align:center;
+    }
+}
+
+.btnexplorer {
+    text-align:center;
+    margin-bottom:20px;
+}
