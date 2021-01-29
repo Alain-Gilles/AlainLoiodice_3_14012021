@@ -1,0 +1,122 @@
+<!-- Projet Ohmyfood -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maquette projet Ohmyfood"/>
+    <title>Projet Ohmayfood</title>
+    <link rel="stylesheet" href="public/css/style.css"/>
+    <link rel="stylesheet" href="public/fontawesome/css/all.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="#"class="affichefleche"><i class="fas fa-arrow-left"></i></a>
+            <div class="entetelogo">
+                <!--<i class="fas fa-arrow-left"></i>-->
+                <img class="logoheader" src="public/img/logos/ohmyfood@2x.svg" alt="logo ohmayfood"/>
+            </div>
+        </header>
+        <section class="hautpage">
+            <form class="rechercheform">
+                <div class="rechercher">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="rechercheville" name="rechercheville" Value="Paris,Belleville">   
+                </div>
+            </form>
+            <div class="presentation">
+                <div class="baseline">
+                    <h1>Réserver le menu qui</h1>
+                    <h1>vous convient</h1>
+                </div>
+                <div class="soustitre">
+                    <p>Découvrez des restaurants d'exception,</p>
+                    <p>sélectionnés par nos soins</p>
+                </div>
+                <div class="btnexplorer">
+                    <button name="explorez" type="button" onclick="">Explorez nos restaurants</button>
+                </div>
+            </div>
+        </section>
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <p id="one">1</p>
+            <button name="choisissez" type="button" onclick=""><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
+            <p id="two">2</p>
+            <button name="composez" type="button" onclick=""><i class="fas fa-list-ul"></i>Composez votre menu</button>
+            <p id="three">3</p>
+            <button name="degustez" type="button" onclick=""><i class="fas fa-store"></i>Degustez au restaurant</button>                    
+        </section>
+        <main class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurant1">
+                <div class="carterest">
+                    <a href="#">
+                        <div class="carterimg1"></div>
+                        <div class="descrimgr">
+                            <div class="descritexte">
+                                <p>La palette du goût</p>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <p class="coeur"><i class="fas fa-heart"></i></p>
+                            <p class="coeur"><i class="far fa-heart"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carterest">
+                    <a href="#">
+                        <div class="carterimg2"></div>
+                        <div class="descrimgr">
+                            <div class="descritexte">
+                                <p>La note enchantée</p>
+                                <p>Charone</p>
+                            </div>
+                            <p class="coeur"><i class="fas fa-heart"></i></p>
+                            <p class="coeur"><i class="far fa-heart"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carterest">
+                    <a href="#">
+                        <div class="carterimg3"></div>
+                        <div class="descrimgr">
+                            <div class="descritexte">
+                                <p>A la française</p>
+                                <p>Citée Rouge</p>
+                            </div>
+                            <p class="coeur"><i class="fas fa-heart"></i></p>
+                            <p class="coeur"><i class="far fa-heart"></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carterest">
+                    <a href="#">
+                        <div class="carterimg4"></div>
+                        <div class="descrimgr">
+                            <div class="descritexte">
+                                <p>Le delice des sens</p>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <p class="coeur"><i class="fas fa-heart"></i></p>
+                            <p class="coeur"><i class="far fa-heart"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="menufooter">
+                <h2><img class="logofooter" src="public/img/logos/ohmyfood@2x.svg" alt="logo ohmayfood"/></h2>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                        <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

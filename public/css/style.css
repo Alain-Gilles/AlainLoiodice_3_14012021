@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Shrikhand';
+  src: local("Shrikhand Regular"), local("Shrikhand-Regular"), url("polices/Shrikhand-Regular.woff2") format("woff2"), url("polices/Shrikhand-Regular.woff") format("woff"), url("polices/Shrikhand-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("polices/Roboto-Regular.woff2") format("woff2"), url("polices/Roboto-Regular.woff") format("woff"), url("polices/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: 'Roboto', 'Shrikhand','Trebuchet MS', Arial, sans-serif;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  font-style: italic;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: white;
+  max-width: 1590px;
+  margin: auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  /**/
+  /* la fleche qui sert de retour sur page index*/
+  /* n'est pas affichée sur page index */
+  /* pour les autres pages il suffira de supprimer de code */
+  /* pour activer le lien et voir apparaitre la fleche */
+  /**/
+}
+header a {
+  position: absolute;
+  top: 8px;
+  color: black;
+}
+header a.affichefleche {
+  display: none;
+}
+
+.entetelogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

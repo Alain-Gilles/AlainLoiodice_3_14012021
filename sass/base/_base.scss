@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // 10px div by def of 16px
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background: white;
+    max-width: 1590px;
+    margin:auto;
+}
+
+.wrapper {
+    width:90%;
+    margin:0 auto;
+}
