@@ -82,9 +82,11 @@ body {
   box-shadow: 2px 2px 0px #9356DC;
   box-shadow: 0.2rem 0.2rem 1rem #9356DC;
   cursor: pointer;
+  outline: unset;
 }
 .btn:hover {
   background: #9356DC;
+  outline: unset;
 }
 
 /** header **/
@@ -96,15 +98,15 @@ header {
   /* pour les autres pages il suffira de supprimer de code */
   /* pour activer le lien et voir apparaitre la fleche */
   /**/
+  /*a.affichefleche {
+      display:none;
+  }*/
 }
 header a {
   position: absolute;
   top: 8px;
   top: 0.8rem;
   color: black;
-}
-header a.affichefleche {
-  display: none;
 }
 header .entetelogo {
   display: flex;
@@ -229,8 +231,24 @@ header .entetelogo {
   box-shadow: 2px 2px 0px gray;
   box-shadow: 0.2rem 0.2rem 1rem gray;
   cursor: pointer;
+  outline: unset;
+  /*&:focus{
+      outline: unset;
+      background: lighten($colour-primary,30);
+      .fa-mobile-alt {
+          color: darken($colour-primary,20)
+      }
+      .fa-list-ul {
+          color: darken($colour-primary,20)
+      }
+      
+      .fa-store {
+          color: darken($colour-primary,20)
+      }
+  }*/
 }
 .btnfonct .btnfoncttheme:hover {
+  outline: unset;
   background: #e4d5f6;
 }
 .btnfonct .btnfoncttheme:hover .fa-mobile-alt {
@@ -243,6 +261,7 @@ header .entetelogo {
   color: #6023a9;
 }
 .btnfonct .btnfoncttheme:active {
+  outline: unset;
   background: #e4d5f6;
 }
 .btnfonct .btnfoncttheme:active .fa-mobile-alt {
@@ -252,18 +271,6 @@ header .entetelogo {
   color: #6023a9;
 }
 .btnfonct .btnfoncttheme:active .fa-store {
-  color: #6023a9;
-}
-.btnfonct .btnfoncttheme:focus {
-  background: #e4d5f6;
-}
-.btnfonct .btnfoncttheme:focus .fa-mobile-alt {
-  color: #6023a9;
-}
-.btnfonct .btnfoncttheme:focus .fa-list-ul {
-  color: #6023a9;
-}
-.btnfonct .btnfoncttheme:focus .fa-store {
   color: #6023a9;
 }
 .btnfonct .btnfoncttheme .fa-mobile-alt::before {
@@ -397,6 +404,7 @@ header .entetelogo {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .restaurants .restaurant1 .carterest a .descrimgr .descritexte {
   padding-left: 10px;
@@ -409,20 +417,14 @@ header .entetelogo {
 .restaurants .restaurant1 .carterest a .descrimgr .coeur {
   padding-right: 10px;
   padding-right: 1rem;
-}
-.restaurants .restaurant1 .carterest a .descrimgr .coeur1 {
-  padding-right: 10px;
-  padding-right: 1rem;
-  display: none;
+  position: absolute;
+  right: 20px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .restaurants .restaurant1 .carterest a:hover .coeur {
-  padding-right: 10px;
-  padding-right: 1rem;
-  /*display:none;*/
-}
-.restaurants .restaurant1 .carterest a:hover .coeur1 {
-  padding-right: 10px;
-  padding-right: 1rem;
+  color: #9356DC;
+  text-shadow: -1px 0 #9356DC, 0 1px #9356DC, 1px 0 #9356DC, 0 -1px #9356DC;
 }
 
 footer {
@@ -457,6 +459,16 @@ footer .menufooter ul li .fa-utensils::before {
 footer .menufooter ul li .fa-hands-helping::before {
   margin-right: 10px;
   margin-right: 1rem;
+}
+
+/** page carte restaurant la palette du gout **/
+/**                                          **/
+a.affichefleche {
+  position: absolute;
+  top: 10px;
+  top: 1rem;
+  left: 30px;
+  left: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
