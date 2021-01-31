@@ -38,6 +38,15 @@ h2 {
   font-style: normal;
 }
 
+h4 {
+  font-family: 'Shrikhand', sans-serif;
+  /*font-family: 'Roboto' , Arial, sans-serif;*/
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
 *,
 *::after,
 *::before {
@@ -64,19 +73,21 @@ body {
 
 .btn {
   padding: 1rem 2rem;
+  border: 1px solid #FF79DA;
   border: 0.1rem solid #FF79DA;
   border-radius: 10rem;
   color: white;
   font-weight: bold;
-  /*background: $colour-secondary;*/
   background: linear-gradient(to bottom, #FF79DA 10%, #ae80e5 90%);
-  box-shadow: 0.2rem 0.2rem 0rem #9356DC;
+  box-shadow: 2px 2px 0px #9356DC;
+  box-shadow: 0.2rem 0.2rem 1rem #9356DC;
   cursor: pointer;
 }
 .btn:hover {
   background: #9356DC;
 }
 
+/** header **/
 header {
   position: relative;
   /**/
@@ -89,75 +100,363 @@ header {
 header a {
   position: absolute;
   top: 8px;
+  top: 0.8rem;
   color: black;
 }
 header a.affichefleche {
   display: none;
 }
-
-.entetelogo {
+header .entetelogo {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
+  margin-top: 1rem;
 }
 
+/** hautpage **/
 .hautpage {
   width: 100%;
-  /*background-color:$colour-fondgris;*/
   background-color: #f2f2f2;
   margin-top: 15px;
+  margin-top: 1.5rem;
   padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
-
-.rechercheform {
+.hautpage .rechercheform {
   width: 100%;
   background-color: #e5e5e5;
 }
-
-.rechercher {
+.hautpage .rechercheform .rechercher {
   padding-top: 10px;
+  padding-top: 1rem;
   padding-bottom: 10px;
+  padding-bottom: 1rem;
   text-align: center;
+  /* icone  marqueur de lieu */
+  /* zone input recherche ville */
 }
-
-/* icone  marqueur de lieu */
-.fa-map-marker-alt {
+.hautpage .rechercheform .rechercher .fa-map-marker-alt {
   color: #4d4d4d;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+  margin-right: 0px;
 }
-
-/* zone input recherche ville */
-input[name="rechercheville"] {
-  padding: 10px;
+.hautpage .rechercheform .rechercher input[name="rechercheville"] {
   color: #4d4d4d;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 15px;
+  font-size: 1.5rem;
   border: 0;
   outline: unset;
+  text-align: center;
   background-color: #e5e5e5;
 }
 
-.baseline {
+/** presentation **/
+.presentation .baseline {
   margin-top: 20px;
+  margin-top: 2rem;
   margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
-.baseline h1 {
+.presentation .baseline h1 {
   text-align: center;
+}
+.presentation .soustitre {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+.presentation .soustitre p {
+  text-align: center;
+}
+.presentation .btnexplorer {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
-.soustitre {
-  margin-bottom: 20px;
-}
-.soustitre p {
-  text-align: center;
+.fonctionnement h2 {
+  margin-top: 20px;
+  margin-top: 2rem;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 
-.btnexplorer {
+/** btnfonct **/
+.btnfonct {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btnfonct .btnfonctchiffre {
+  font-size: 11px;
+  font-size: 1.1rem;
+  width: 25px;
+  width: 2.5rem;
+  height: 25px;
+  height: 2.5rem;
+  border-radius: 12.5px;
+  border-radius: 1.25rem;
+  background: #9356DC;
+  color: white;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 5px;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 28px;
+  bottom: 2.8rem;
+  left: 15px;
+  left: 1.5rem;
+}
+.btnfonct .btnfoncttheme {
+  width: 85%;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #b3b3b3;
+  border: 0.1rem solid #b3b3b3;
+  border-radius: 1.8rem;
+  padding: 20px 25px;
+  padding: 2rem 2.5rem;
+  color: black;
+  font-weight: 600;
+  background: linear-gradient(to bottom, #FF79DA 90, white 10);
+  box-shadow: 2px 2px 0px gray;
+  box-shadow: 0.2rem 0.2rem 1rem gray;
+  cursor: pointer;
+}
+.btnfonct .btnfoncttheme:hover {
+  background: #e4d5f6;
+}
+.btnfonct .btnfoncttheme:hover .fa-mobile-alt {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme:hover .fa-list-ul {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme:hover .fa-store {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme:active {
+  background: #e4d5f6;
+}
+.btnfonct .btnfoncttheme:active .fa-mobile-alt {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme:active .fa-list-ul {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme:active .fa-store {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme:focus {
+  background: #e4d5f6;
+}
+.btnfonct .btnfoncttheme:focus .fa-mobile-alt {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme:focus .fa-list-ul {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme:focus .fa-store {
+  color: #6023a9;
+}
+.btnfonct .btnfoncttheme .fa-mobile-alt::before {
+  margin-right: 18px;
+  margin-right: 1.8rem;
+}
+.btnfonct .btnfoncttheme .fa-list-ul::before {
+  margin-right: 18px;
+  margin-right: 1.8rem;
+}
+.btnfonct .btnfoncttheme .fa-store::before {
+  margin-right: 18px;
+  margin-right: 1.8rem;
+}
+
+/** restaurants **/
+.restaurants {
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 15px;
+  margin-top: 1.5rem;
+  padding-bottom: 20px;
+  padding-bottom: 2rem;
+}
+.restaurants h2 {
+  padding-top: 30px;
+  padding-top: 3rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+  padding-left: 10px;
+  padding-left: 1rem;
+}
+.restaurants .restaurant1 {
+  width: 90%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items:center;*/
+}
+.restaurants .restaurant1 .carterest {
+  background: white;
+  border-radius: 10px;
+  border-radius: 1rem;
+  border: 1px solid black;
+  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+}
+.restaurants .restaurant1 .carterest a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.restaurants .restaurant1 .carterest a .carterimg1 {
+  width: 100%;
+  height: 120px;
+  height: 12rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: auto;
+  background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: cover;
+  background-position: center;
+}
+.restaurants .restaurant1 .carterest a .nouveau {
+  position: absolute;
+  top: 10px;
+  top: 1rem;
+  right: 10px;
+  right: 1rem;
+  background: #99E2D0;
+  color: #278870;
+  padding: 5px;
+  padding: 0.5rem;
+  font-size: 10px;
+  font-size: 1.0rem;
+}
+.restaurants .restaurant1 .carterest a .carterimg2 {
+  width: 100%;
+  height: 120px;
+  height: 12rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: auto;
+  background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: cover;
+  background-position: center;
+}
+.restaurants .restaurant1 .carterest a .carterimg3 {
+  width: 100%;
+  height: 120px;
+  height: 12rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: auto;
+  background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: cover;
+  background-position: center;
+}
+.restaurants .restaurant1 .carterest a .carterimg4 {
+  width: 100%;
+  height: 120px;
+  height: 12rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: auto;
+  background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-size: cover;
+  background-position: center;
+}
+.restaurants .restaurant1 .carterest a .descrimgr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants .restaurant1 .carterest a .descrimgr .descritexte {
+  padding-left: 10px;
+  padding-left: 1rem;
+  padding-top: 10px;
+  padding-top: 1rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+}
+.restaurants .restaurant1 .carterest a .descrimgr .coeur {
+  padding-right: 10px;
+  padding-right: 1rem;
+}
+.restaurants .restaurant1 .carterest a .descrimgr .coeur1 {
+  padding-right: 10px;
+  padding-right: 1rem;
+  display: none;
+}
+.restaurants .restaurant1 .carterest a:hover .coeur {
+  padding-right: 10px;
+  padding-right: 1rem;
+  /*display:none;*/
+}
+.restaurants .restaurant1 .carterest a:hover .coeur1 {
+  padding-right: 10px;
+  padding-right: 1rem;
+}
+
+footer {
+  background: #4d4d4d;
+}
+footer .menufooter h4 {
+  color: white;
+  padding-top: 10px;
+  padding-top: 1rem;
+  padding-left: 10px;
+  padding-left: 1rem;
+}
+footer .menufooter ul {
+  padding-left: 10px;
+  padding-left: 1rem;
+  padding-top: 10px;
+  padding-top: 1rem;
+  padding-bottom: 10px;
+  padding-bottom: 1rem;
+  list-style-type: none;
+}
+footer .menufooter ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  font-size: 1.0rem;
+}
+footer .menufooter ul li .fa-utensils::before {
+  margin-right: 10px;
+  margin-right: 1rem;
+}
+footer .menufooter ul li .fa-hands-helping::before {
+  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

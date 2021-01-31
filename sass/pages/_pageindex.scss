@@ -1,8 +1,11 @@
+/** header **/
+
 header {
     position:relative;
     a {
         position:absolute;
         top:8px;
+        top:0.8rem;
         color:black;
     }
     /**/
@@ -14,71 +17,378 @@ header {
     a.affichefleche {
         display:none;
     }
+    .entetelogo {
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+        margin-top:10px;
+        margin-top:1rem;
+    }
 }
 
-.entetelogo {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    margin-top:10px;
-}
+/** hautpage **/
 
 .hautpage {
     width:100%;
-    /*background-color:$colour-fondgris;*/
     background-color: lighten($colour-fondgris,$pourcentage-fondlighten);
     margin-top:15px;
+    margin-top:1.5rem;
     padding-bottom:20px;
-}
+    padding-bottom:2rem;
+    .rechercheform {
+        width:100%;
+        background-color: darken($colour-fondgris,$pourcentage-fonddarken);
+        .rechercher {
+            padding-top:10px;
+            padding-top:1rem;
+            padding-bottom:10px;
+            padding-bottom:1rem;
+            text-align:center;
+            /* icone  marqueur de lieu */
+            .fa-map-marker-alt {
+            color: lighten($color-police,30);
+            font-weight:bold;
+            font-size:15px;
+            font-size:1.5rem;
+            margin-right:0px;
+            }
+            /* zone input recherche ville */
 
-.rechercheform {
-    width:100%;
-    background-color: darken($colour-fondgris,$pourcentage-fonddarken);
-}
+            input[name="rechercheville"] {
+            color: lighten($color-police,30);
+            font-weight:bold;
+            font-size:15px;
+            font-size:1.5rem;
+            border:0;   
+            outline:unset;
+            text-align: center; 
+            background-color: darken($colour-fondgris,$pourcentage-fonddarken);
+            }       
+        }
 
-.rechercher {
-    padding-top:10px;
-    padding-bottom:10px;
-    text-align:center;
-}
-
-/* icone  marqueur de lieu */
-
-.fa-map-marker-alt {
-    color: lighten($color-police,30);
-    font-weight:bold;
-    font-size:2rem;
-}
-
-/* zone input recherche ville */
-
-input[name="rechercheville"] {
-    padding:10px;
-    color: lighten($color-police,30);
-    font-weight:bold;
-    font-size:1.8rem;
-    border:0;   
-    outline:unset;
-    background-color: darken($colour-fondgris,$pourcentage-fonddarken);
-}
-
-.baseline {
-    margin-top:20px;
-    margin-bottom:20px;
-    h1 {
-    text-align:center;
     }
 }
 
-.soustitre {
-    margin-bottom:20px;
-    p {
-    text-align:center;
+/** presentation **/
+
+.presentation {
+
+    .baseline {
+        margin-top:20px;
+        margin-top:2rem;
+        margin-bottom:20px;
+        margin-bottom:2rem;
+        h1 {
+        text-align:center;
+        }
+    }
+
+    .soustitre {
+        margin-bottom:20px;
+        margin-bottom:2rem;
+        p {
+        text-align:center;
+        }
+    }
+
+    .btnexplorer {
+        text-align:center;
+        margin-bottom:20px;
+        margin-bottom:2rem;
+    }
+}
+.fonctionnement {
+    h2 {
+        margin-top: 20px;
+        margin-top: 2rem;
+        margin-bottom: 10px;
+        margin-bottom: 1rem;
+        margin-left: 5px;
+        margin-left: 0.5rem;
     }
 }
 
-.btnexplorer {
-    text-align:center;
-    margin-bottom:20px;
+/** btnfonct **/
+
+.btnfonct {
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    .btnfonctchiffre {
+        font-size: 11px;
+        font-size: 1.1rem;
+        width:25px;
+        width: 2.5rem;
+        height:25px;
+        height: 2.5rem;
+        border-radius: 12.5px;
+        border-radius: 1.25rem;
+        background: $colour-primary;
+        color: $btn-color;
+        text-align:center;
+        padding:5px;
+        padding:0.5rem;
+        position:absolute;
+        bottom:28px;
+        bottom:2.8rem;
+        left:15px;
+        left:1.5rem;
+    }
+    .btnfoncttheme {
+        width:85%;
+        margin-bottom:15px;
+        margin-bottom:1.5rem;
+        @include border(lighten(gray,20),1.8rem);
+        padding: 20px 25px;
+        padding: 2rem 2.5rem;
+        color: black;
+        font-weight: 600;
+        background:linear-gradient(to bottom, $colour-secondary 90, lighten($colour-primary,50) 10);
+        box-shadow:2px 2px 0px gray;
+        box-shadow:0.2rem 0.2rem 1rem gray;
+        cursor: pointer;
+        &:hover{
+            background: lighten($colour-primary,30);
+            .fa-mobile-alt {
+                color: darken($colour-primary,20)
+            }
+            .fa-list-ul {
+                color: darken($colour-primary,20)
+            }
+            
+            .fa-store {
+                color: darken($colour-primary,20)
+            }
+        }
+        &:active{
+            background: lighten($colour-primary,30);
+            .fa-mobile-alt {
+                color: darken($colour-primary,20)
+            }
+            .fa-list-ul {
+                color: darken($colour-primary,20)
+            }
+            
+            .fa-store {
+                color: darken($colour-primary,20)
+            }
+        }
+        &:focus{
+            background: lighten($colour-primary,30);
+            .fa-mobile-alt {
+                color: darken($colour-primary,20)
+            }
+            .fa-list-ul {
+                color: darken($colour-primary,20)
+            }
+            
+            .fa-store {
+                color: darken($colour-primary,20)
+            }
+        }
+        .fa-mobile-alt::before {
+            margin-right:18px;
+            margin-right:1.8rem;
+            }
+        .fa-list-ul::before {
+            margin-right:18px;
+            margin-right:1.8rem;
+            }
+        .fa-store::before {
+            margin-right:18px;
+            margin-right:1.8rem;
+            }
+    }
 }
+
+/** restaurants **/
+
+.restaurants {
+    width:100%;        
+    background-color: lighten($colour-fondgris,$pourcentage-fondlighten);
+    margin-top:15px;
+    margin-top:1.5rem;
+    padding-bottom:20px;
+    padding-bottom:2rem;
+    h2 {
+        padding-top:30px;
+        padding-top:3rem;
+        padding-bottom:10px;
+        padding-bottom:1rem;
+        padding-left:10px;
+        padding-left:1rem;
+        }
+    .restaurant1 {
+        width:90%;
+        margin-left:4%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        /*align-items:center;*/
+        .carterest {
+            background:white;
+            border-radius:10px;
+            border-radius:1rem;
+            border:1px solid black;
+            margin-bottom:15px;
+            margin-bottom:1.5rem;
+            a {
+                display:flex;
+                flex-direction:column;
+                text-decoration:none;
+                color:black;
+                position:relative;
+                .carterimg1 {
+                    width:100%;
+                    height:120px;
+                    height:12rem;
+                    border-top-left-radius:10px;
+                    border-top-right-radius:10px;
+                    border-top-left-radius:1rem;
+                    border-top-right-radius:1rem;
+                    margin:auto;
+                    background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+                    background-repeat:no-repeat;
+                    background-origin:padding-box;
+                    background-size:cover;
+                    background-position: center;
+                }
+                .nouveau {
+                    position:absolute;
+                    top:10px;
+                    top:1rem;
+                    right:10px;
+                    right:1rem;
+                    background: $colour-tertiaire;
+                    color: darken($colour-tertiaire,40);
+                    padding: 5px;
+                    padding: 0.5rem;
+                    font-size: 10px;
+                    font-size: 1.0rem;
+                }
+                .carterimg2 {
+                    width:100%;
+                    height:120px;
+                    height:12rem;
+                    border-top-left-radius:10px;
+                    border-top-right-radius:10px;
+                    border-top-left-radius:1rem;
+                    border-top-right-radius:1rem;
+                    margin:auto;
+                    background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+                    background-repeat:no-repeat;
+                    background-origin:padding-box;
+                    background-size:cover;
+                    background-position: center;
+                }
+                .carterimg3 {
+                    width:100%;
+                    height:120px;
+                    height:12rem;
+                    border-top-left-radius:10px;
+                    border-top-right-radius:10px;
+                    border-top-left-radius:1rem;
+                    border-top-right-radius:1rem;
+                    margin:auto;
+                    background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+                    background-repeat:no-repeat;
+                    background-origin:padding-box;
+                    background-size:cover;
+                    background-position: center;
+                }
+                .carterimg4 {
+                    width:100%;
+                    height:120px;
+                    height:12rem;
+                    border-top-left-radius:10px;
+                    border-top-right-radius:10px;
+                    border-top-left-radius:1rem;
+                    border-top-right-radius:1rem;
+                    margin:auto;
+                    background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+                    background-repeat:no-repeat;
+                    background-origin:padding-box;
+                    background-size:cover;
+                    background-position: center;
+                }
+                .descrimgr {
+                    display:flex;
+                    flex-direction:row;
+                    justify-content:space-between;
+                    align-items:center;
+                    .descritexte {
+                        padding-left:10px;
+                        padding-left:1rem;
+                        padding-top:10px;
+                        padding-top:1rem;
+                        padding-bottom:10px;
+                        padding-bottom:1rem;
+                    }
+                    .coeur {
+                        padding-right:10px;
+                        padding-right:1rem;
+                        }
+                    .coeur1 {
+                        padding-right:10px;
+                        padding-right:1rem;
+                        display:none;
+                        }
+                }
+            }
+            a:hover {
+                .coeur {
+                    padding-right:10px;
+                    padding-right:1rem;
+                    
+                    /*display:none;*/
+                    }
+                .coeur1 {
+                    padding-right:10px;
+                    padding-right:1rem;
+                    }
+       
+            }
+        }
+    }
+}
+
+footer {
+    background: darken(grey,20); 
+    .menufooter {
+        h4 {
+            color:white;
+            padding-top:10px;
+            padding-top:1rem;
+            padding-left:10px;
+            padding-left:1rem;
+        }
+        ul {
+            padding-left:10px;
+            padding-left:1rem;
+            padding-top:10px;
+            padding-top:1rem;
+            padding-bottom:10px;
+            padding-bottom:1rem;
+            list-style-type: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 10px;
+                    font-size: 1.0rem;
+                }
+                .fa-utensils::before {
+                    margin-right:10px;
+                    margin-right:1rem;
+                }
+                .fa-hands-helping::before {
+                    margin-right:10px;
+                    margin-right:1rem;
+                }
+            } 
+        }
+    }
+}
+

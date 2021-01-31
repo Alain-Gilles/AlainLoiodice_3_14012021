@@ -1,18 +1,19 @@
-@mixin border($colour:$colour-secondary) {
+@mixin border($colour:$colour-secondary,$radius:10rem) {
+    border: 1px solid $colour;
     border: .1rem solid $colour;
-    border-radius:10rem;
+    border-radius:$radius;
 }
 
-@mixin btn {
+@mixin btn ($colourprimary:$colour-primary,$coloursecondary:$colour-secondary,$pourcentagesecond:10%,$pourcentageprimary:90%,$pourcentagelighten:10) {
     padding: $btn-paddingv $btn-paddingh;
     @include border;
     color: $btn-color;
     font-weight: bold;
-    /*background: $colour-secondary;*/
-    background:linear-gradient(to bottom, $colour-secondary 10%, lighten($colour-primary,10) 90%);
-    box-shadow:0.2rem 0.2rem 0rem $colour-primary;
+    background:linear-gradient(to bottom, $coloursecondary $pourcentagesecond, lighten($colourprimary,$pourcentagelighten) $pourcentageprimary);
+    box-shadow:2px 2px 0px $colour-primary;
+    box-shadow:0.2rem 0.2rem 1rem $colour-primary;
     cursor: pointer;
     &:hover{
-        background: $colour-primary;
+        background: $colourprimary;
     }
-  }
+  } 
