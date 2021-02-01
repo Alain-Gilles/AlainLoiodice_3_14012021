@@ -23,11 +23,11 @@ a.affichefleche {
 
 .cartemenu {
     width:100%;
-    background-color: lighten($colour-fondgris,$pourcentage-fondlighten);
+    background: lighten($colour-fondgris,$pourcentage-fondlighten);
     border-top-left-radius:30px;
     border-top-right-radius:30px;
-    border-top-left-radius:3rem;
-    border-top-right-radius:3rem;
+    /*border-top-left-radius:3rem;
+    border-top-right-radius:3rem;*/
     position:relative;
     top:-20px;
     .nomrestaurant {
@@ -66,46 +66,75 @@ a.affichefleche {
             }
             .envelopcartethemeplatcontenu {
                 position:relative;
-                .cartethemeplatcontenu {
-                    width:94%;
-                    height:60px;
-                    border-radius:10px;
-                    border-radius:1rem;
-                    box-shadow: 2px 2px 6px grey;
-                    .plat {
-                        margin-left:4%;
-                        padding-top:5px;
-                        padding-bottom:5px;
-                        padding-top:0.5rem;
-                        padding-bottom:0.5rem;
-                        position:relative;
-                        .tarif {
-                            position:absolute;
-                            bottom: 5px;
-                            right:15px;
-                            bottom: 0.5rem;
-                            right:1.5rem;
+                a {
+                    text-decoration:none;
+                    color:black;
+                    /*position:relative;*/
+                    .cartethemeplatcontenu {
+                        width:94%;
+                        height:60px;
+                        border-radius:10px;
+                        border-radius:1rem;
+                        box-shadow: 2px 2px 6px grey;
+                        .plat {
+                            margin-left:4%;
+                            padding-top:5px;
+                            padding-bottom:5px;
+                            padding-top:0.5rem;
+                            padding-bottom:0.5rem;
+                            position:relative;
+                            .tarif {
+                                position:absolute;
+                                bottom: 5px;
+                                right:15px;
+                                bottom: 0.5rem;
+                                right:1.5rem;
+                            }
                         }
                     }
-                }
+                    .cartethemeplatselect {
+                        width:50px;
+                        width:5rem;
+                        height:60px;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        box-shadow: 2px 2px 6px grey;
+                        background: $colour-tertiaire;
+                        position:absolute;
+                        top:0px;
+                        right:-500px;
+                        p {
+                            text-align:center;
+                            padding-top:25%;
+                            color:white;
+                            font-size: 20px;
+                            font-size: 2.0rem;
+                        }
+                    }
+                }/*a*/
+            } /*envelopcartethemeplatcontenu*/   
+
+            .envelopcartethemeplatcontenu:hover {
                 .cartethemeplatselect {
-                    width:20%;
-                    height:60px;
-                    border-top-right-radius: 10px;
-                    border-bottom-right-radius: 10px;
-                    box-shadow: 2px 2px 6px grey;
-                    background: $colour-tertiaire;
-                    position:absolute;
-                    top:0px;
-                   /* right:-30px;*/
-                   p {
-                       text-align:center;
-                       padding-top:30%;
-                       color:white;
-                   }
+                    animation-name:deplacement;
+                    animation-duration:0.4s;
                 }
-            }
-        }
+            }/*envelopcartethemeplatcontenu:hover*/   
+                      
+        } /*cartethemeplat*/
+
+    } /*envelopthemeplat*/
+} /*cartemenu*/
+
+@keyframes deplacement{
+    0% {
+        right:-30px;
+    }
+    50% {
+        right:0px;
+    }
+    100% {
+        right:20px;
     }
 }
 
