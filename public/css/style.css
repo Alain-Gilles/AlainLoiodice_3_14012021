@@ -551,11 +551,14 @@ a.affichefleche {
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat {
   margin-left: 4%;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 5px;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   padding-bottom: 0.5rem;
   position: relative;
+}
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat1p {
+  font-weight: bold;
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .tarif {
   position: absolute;
@@ -578,14 +581,23 @@ a.affichefleche {
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatselect p {
   text-align: center;
-  padding-top: 25%;
+  padding-top: 30%;
   color: white;
-  font-size: 20px;
-  font-size: 2.0rem;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatselect {
   animation-name: deplacement;
   animation-duration: 0.4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatselect .fa-check-circle {
+  animation-name: rotationicone;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
 }
 
 /*cartemenu*/
@@ -598,6 +610,16 @@ a.affichefleche {
   }
   100% {
     right: 20px;
+  }
+}
+@keyframes rotationicone {
+  0% {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg);
   }
 }
 
