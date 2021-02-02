@@ -11,125 +11,147 @@
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <!-- logo ohmyfood affichage en svg -->
-            <div class="entetelogo">
-                <img class="logoheader" src="public/img/logos/ohmyfood@2x.svg" alt="logo ohmayfood"/>
-            </div>
-        </header>
-        <!--Rechercheform  Zone de recherche ville 
-            Presentation Baseline Reservez le menu qui vous convient
-                         Soustitre Découvrez des restaurants ....
-                         Btnexplorer bouton explorez nos restaurants -->
-        <section class="hautpage">
-            <form class="rechercheform">
-                <div class="rechercher">
-                    <i class="fas fa-map-marker-alt"></i> 
-                    <input type="text" id="rechercheville" name="rechercheville" Value="Paris, Belleville">   
+        <div class="pageprincipale">
+            <header>
+                <!-- logo ohmyfood affichage en svg -->
+                <div class="entetelogo">
+                    <img class="logoheader" src="public/img/logos/ohmyfood@2x.svg" alt="logo ohmayfood"/>
                 </div>
-            </form>
-            <div class="presentation">
-                <div class="baseline">
-                    <h1>Réservez le menu qui</h1>
-                    <h1>vous convient</h1>
+            </header>
+            <!--Rechercheform  Zone de recherche ville 
+                Presentation Baseline Reservez le menu qui vous convient
+                            Soustitre Découvrez des restaurants ....
+                            Btnexplorer bouton explorez nos restaurants -->
+            <section class="hautpage">
+                <form class="rechercheform">
+                    <div class="rechercher">
+                        <i class="fas fa-map-marker-alt"></i> 
+                        <input type="text" id="rechercheville" name="rechercheville" Value="Paris, Belleville">   
+                    </div>
+                </form>
+                <div class="presentation">
+                    <div class="baseline">
+                        <h1>Réservez le menu qui</h1>
+                        <h1>vous convient</h1>
+                    </div>
+                    <div class="soustitre">
+                        <p>Découvrez des restaurants d'exception,</p>
+                        <p>sélectionnés par nos soins</p>
+                    </div>
+                    <div class="btnexplorer">
+                        <button class="btn" name="explorez" type="button" onclick="">Explorez nos restaurants</button>
+                    </div>
                 </div>
-                <div class="soustitre">
-                    <p>Découvrez des restaurants d'exception,</p>
-                    <p>sélectionnés par nos soins</p>
+            </section>
+            <!-- Fonctionnement 
+                btnfonct  bouton choisissez un restaurant
+                btnfonct  bouton composez votre menu
+                btnfonct  bouton degustez au restaurant -->
+            <section class="fonctionnement">
+                <h2>Fonctionnement</h2>
+                <div class="btnfonct">
+                    <p class="btnfonctchiffre">1</p>
+                    <button class="btnfoncttheme" name="choisissez" type="button" onclick=""><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
                 </div>
-                <div class="btnexplorer">
-                    <button class="btn" name="explorez" type="button" onclick="">Explorez nos restaurants</button>
+                <div class="btnfonct">
+                    <p class="btnfonctchiffre">2</p>
+                    <button class="btnfoncttheme" name="composez" type="button" onclick=""><i class="fas fa-list-ul"></i>Composez votre menu</button>
                 </div>
-            </div>
-        </section>
-        <!-- Fonctionnement 
-            btnfonct  bouton choisissez un restaurant
-            btnfonct  bouton composez votre menu
-            btnfonct  bouton degustez au restaurant -->
-        <section class="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <div class="btnfonct">
-                <p class="btnfonctchiffre">1</p>
-                <button class="btnfoncttheme" name="choisissez" type="button" onclick=""><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button>
-            </div>
-            <div class="btnfonct">
-                <p class="btnfonctchiffre">2</p>
-                <button class="btnfoncttheme" name="composez" type="button" onclick=""><i class="fas fa-list-ul"></i>Composez votre menu</button>
-            </div>
-            <div class="btnfonct">    
-                <p class="btnfonctchiffre">3</p>
-                <button class="btnfoncttheme" name="degustez" type="button" onclick=""><i class="fas fa-store"></i>Degustez au restaurant</button>
-            </div>
-        </section>
-        <!-- restaurants contient les cartres descriptives des restaurants  4 cartes -->
-        <main class="restaurants">
-            <h2>Restaurants</h2>
-            <div class="restaurant1">
-                <div class="carterest">
-                    <a href="palette.html">
-                        <div class="carterimg1"></div>
-                        <div class="nouveau">Nouveau</div>
-                        <div class="descrimgr">
-                            <div class="descritexte">
-                                <p>La palette du goût</p>
-                                <p>Ménilmontant</p>
+                <div class="btnfonct">    
+                    <p class="btnfonctchiffre">3</p>
+                    <button class="btnfoncttheme" name="degustez" type="button" onclick=""><i class="fas fa-store"></i>Degustez au restaurant</button>
+                </div>
+            </section>
+            <!-- restaurants contient les cartres descriptives des restaurants  4 cartes -->
+            <main class="restaurants">
+                <h2>Restaurants</h2>
+                <div class="restaurant1">
+                    <div class="carterest">
+                        <a href="palette.html">
+                            <div class="carterimg1"></div>
+                            <div class="nouveau">Nouveau</div>
+                            <div class="descrimgr">
+                                <div class="descritexte">
+                                    <p>La palette du goût</p>
+                                    <p>Ménilmontant</p>
+                                </div>
+                                <p class="coeur"><i class="fas fa-heart"></i></p>
                             </div>
-                            <p class="coeur"><i class="fas fa-heart"></i></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="carterest">
-                    <a href="#">
-                        <div class="carterimg2"></div>
-                        <div class="nouveau">Nouveau</div>
-                        <div class="descrimgr">
-                            <div class="descritexte">
-                                <p>La note enchantée</p>
-                                <p>Charone</p>
+                        </a>
+                    </div>
+                    <div class="carterest">
+                        <a href="#">
+                            <div class="carterimg2"></div>
+                            <div class="nouveau">Nouveau</div>
+                            <div class="descrimgr">
+                                <div class="descritexte">
+                                    <p>La note enchantée</p>
+                                    <p>Charone</p>
+                                </div>
+                                <p class="coeur"><i class="fas fa-heart"></i></p>
                             </div>
-                            <p class="coeur"><i class="fas fa-heart"></i></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="carterest">
-                    <a href="#">
-                        <div class="carterimg3"></div>
-                        <div class="descrimgr">
-                            <div class="descritexte">
-                                <p>A la française</p>
-                                <p>Citée Rouge</p>
+                        </a>
+                    </div>
+                    <div class="carterest">
+                        <a href="#">
+                            <div class="carterimg3"></div>
+                            <div class="descrimgr">
+                                <div class="descritexte">
+                                    <p>A la française</p>
+                                    <p>Citée Rouge</p>
+                                </div>
+                                <p class="coeur"><i class="fas fa-heart"></i></p>
                             </div>
-                            <p class="coeur"><i class="fas fa-heart"></i></p>
-                        </div>
-                    </a>
-                </div>
-                <div class="carterest">
-                    <a href="#">
-                        <div class="carterimg4"></div>
-                        <div class="descrimgr">
-                            <div class="descritexte">
-                                <p>Le delice des sens</p>
-                                <p>Folie-Méricourt</p>
+                        </a>
+                    </div>
+                    <div class="carterest">
+                        <a href="#">
+                            <div class="carterimg4"></div>
+                            <div class="descrimgr">
+                                <div class="descritexte">
+                                    <p>Le delice des sens</p>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                                <p class="coeur"><i class="fas fa-heart"></i></p>
                             </div>
-                            <p class="coeur"><i class="fas fa-heart"></i></p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
 
-        <footer>
-            <!-- menu -->
-            <div class="menufooter">
-                <h4>ohmyfood</h4>
-                <ul>
-                    <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                    <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="mailto:contact@example.com">Contact</a></li>
-                </ul>
+            <footer>
+                <!-- menu -->
+                <div class="menufooter">
+                    <h4>ohmyfood</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                        <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="mailto:contact@example.com">Contact</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <!---->
+        <!-- Page animation-->
+        <!---->
+        <div class="loader">
+            <div class="load">
+                <h1 class="load__let1">o</h1>
+                <h1 class="load__let2">h</h1>
+                <h1 class="load__let3">m</h1>
+                <h1 class="load__let4">y</h1>
+                <h1 class="load__let5">f</h1>
+                <h1 class="load__let6">o</h1>
+                <h1 class="load__let7">o</h1>
+                <h1 class="load__let8">d</h1>
             </div>
-        </footer>
+            <div class="paris">
+                <h2>Paris</h2>
+            </div>
+        </div>
+
     </div>
 </body>
 </html>
