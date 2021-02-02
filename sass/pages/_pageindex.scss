@@ -235,7 +235,8 @@ header {
             background:white;
             border-radius:10px;
             border-radius:1rem;
-            border:1px solid black;
+            /*border:1px solid black;*/
+            box-shadow: 2px 2px 6px grey;
             margin-bottom:15px;
             margin-bottom:1.5rem;
             a {
@@ -339,14 +340,26 @@ header {
                         color:white;
                         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                     }
+                    .coeur:hover {
+                        color:$colour-primary;
+                        text-shadow: -1px 0 $colour-primary, 0 1px $colour-primary, 1px 0 $colour-primary, 0 -1px $colour-primary;
+                        
+
+                        animation-name:remplissagecoeur;
+                        animation-duration:1s;
+                        animation-timing-function:ease-in;
+                        animation-fill-mode:both;
+
+                        
+                    }
                 }
             }
-            a:hover {
+            /*a:hover {
                 .coeur {
                    color:$colour-primary;
                    text-shadow: -1px 0 $colour-primary, 0 1px $colour-primary, 1px 0 $colour-primary, 0 -1px $colour-primary;
                 }                       
-            }
+            }*/
         }
     }
 }
@@ -389,3 +402,13 @@ footer {
     }
 }
 
+@keyframes remplissagecoeur {
+    0% {
+        color:white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    100% {
+        color:$colour-primary;
+        text-shadow: -1px 0 $colour-primary, 0 1px $colour-primary, 1px 0 $colour-primary, 0 -1px $colour-primary;
+    }
+}
