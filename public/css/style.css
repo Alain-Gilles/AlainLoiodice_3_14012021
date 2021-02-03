@@ -80,6 +80,7 @@ body {
   background: #fff;
   max-width: 1590px;
   min-width: 299px;
+  width: 100%;
   margin: auto;
 }
 
@@ -678,8 +679,13 @@ footer .menufooter ul li .fa-hands-helping::before {
     text-shadow: -1px 0 #9356DC, 0 1px #9356DC, 1px 0 #9356DC, 0 -1px #9356DC;
   }
 }
-/** page carte restaurant la palette du gout **/
+/** page carte restaurant la palette du gout  **/
 /**                                          **/
+/**                                          **/
+.corpsresto {
+  width: 100%;
+}
+
 a.affichefleche {
   position: absolute;
   top: 10px;
@@ -743,6 +749,9 @@ a.affichefleche {
   animation-fill-mode: both;
 }
 .cartemenu .envelopthemeplat {
+  /** ajout overflow **/
+  overflow: hidden;
+  /**               **/
   position: relative;
   padding-bottom: 20px;
   padding-bottom: 2rem;
@@ -804,6 +813,11 @@ a.affichefleche {
   /*width: 40px;*/
   overflow: hidden;
   white-space: nowrap;
+}
+@media only screen and (max-width: 360px) {
+  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
+    width: 200px;
+  }
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .tarif {
   position: absolute;
