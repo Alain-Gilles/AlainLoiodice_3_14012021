@@ -4,7 +4,14 @@
     border-radius:$radius;
 }
 
-@mixin btn ($colourprimary:$colour-primary,$coloursecondary:$colour-secondary,$pourcentagesecond:10%,$pourcentageprimary:90%,$pourcentagelighten:10) {
+@mixin apparition($name,$duration,$timefunct,$fillmode,$delay) {
+    animation-name:$name;
+    animation-duration:$duration;
+    animation-timing-function:$timefunct;
+    animation-delay:$delay;
+}
+
+/*@mixin btn ($colourprimary:$colour-primary,$coloursecondary:$colour-secondary,$pourcentagesecond:10%,$pourcentageprimary:90%,$pourcentagelighten:10) {
     padding: $btn-paddingv $btn-paddingh;
     @include border;
     color: $btn-color;
@@ -16,6 +23,7 @@
     outline: unset;
     &:hover{
         background: $colourprimary;
+        
         outline: unset;
     }
-} 
+}*/ 

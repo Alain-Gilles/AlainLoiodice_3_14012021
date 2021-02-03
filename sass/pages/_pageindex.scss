@@ -96,6 +96,25 @@ header {
         text-align:center;
         margin-bottom:20px;
         margin-bottom:2rem;
+        /**/
+        .btn {
+        padding: $btn-paddingv $btn-paddingh;
+        @include border(lighten(grey,20),10rem);
+        color: $btn-color;
+        font-weight: bold;
+        background:linear-gradient(to bottom, lighten($colour-secondary,0) 10%, lighten($colour-primary,0) 90%);
+        box-shadow:1px 2px 5px lighten(grey,20);
+        box-shadow:0.1rem 0.2rem 0.5rem lighten(grey,20);
+        cursor: pointer;
+        outline: unset;
+        &:hover{
+        background:linear-gradient(to bottom, lighten($colour-secondary,5) 10%, lighten($colour-primary,10) 90%);
+        outline: unset;
+        box-shadow:3px 3px 10px lighten(grey,20);
+        box-shadow:0.3rem 0.3rem 1rem lighten(grey,20);
+        }
+        }
+        /**/
     }
 }
 .fonctionnement {

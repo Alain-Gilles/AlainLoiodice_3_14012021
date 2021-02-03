@@ -26,8 +26,8 @@ a.affichefleche {
     background: lighten($colour-fondgris,$pourcentage-fondlighten);
     border-top-left-radius:30px;
     border-top-right-radius:30px;
-    /*border-top-left-radius:3rem;
-    border-top-right-radius:3rem;*/
+    border-top-left-radius:3rem;
+    border-top-right-radius:3rem;
     position:relative;
     top:-20px;
     .nomrestaurant {
@@ -78,6 +78,9 @@ a.affichefleche {
             }
             .envelopcartethemeplatcontenu {
                 position:relative;
+                /** apparition progressive des cartes menu **/
+                @include apparition(apparitionc1,800ms,ease-in,forward,10ms);
+                /**/
                 a {
                     text-decoration:none;
                     color:black;
@@ -190,4 +193,15 @@ a.affichefleche {
         transform: rotate(360deg);
     }
 }
-
+/**/
+@keyframes apparitionc1 {
+    from {
+      opacity: 0;
+    }
+    25%{opacity:0.25;}
+    50%{opacity:0.5;}
+    75%{opacity:0.75;}
+    to {
+      opacity: 1;
+    }
+  }
