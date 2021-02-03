@@ -63,6 +63,8 @@ a.affichefleche {
     }
     .envelopthemeplat {
         position:relative;
+        padding-bottom:20px;
+        padding-bottom:2rem;
         .cartethemeplat {
             margin-left:5%;
             .titrecarte {
@@ -78,6 +80,8 @@ a.affichefleche {
             }
             .envelopcartethemeplatcontenu {
                 position:relative;
+                margin-bottom:10px;
+                margin-bottom:1rem;
                 /** apparition progressive des cartes menu **/
                 @include apparition(apparitionc1,800ms,ease-in,forward,10ms);
                 /**/

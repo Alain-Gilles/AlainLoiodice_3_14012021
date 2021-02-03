@@ -744,6 +744,8 @@ a.affichefleche {
 }
 .cartemenu .envelopthemeplat {
   position: relative;
+  padding-bottom: 20px;
+  padding-bottom: 2rem;
   /*cartethemeplat*/
 }
 .cartemenu .envelopthemeplat .cartethemeplat {
@@ -764,6 +766,8 @@ a.affichefleche {
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu {
   position: relative;
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
   /** apparition progressive des cartes menu **/
   animation-name: apparitionc1;
   animation-duration: 800ms;
