@@ -93,10 +93,10 @@ header {
     }
 
     .btnexplorer {
-        text-align:center;
+        @include boutonsindexcarte;
+        /*text-align:center;
         margin-bottom:20px;
         margin-bottom:2rem;
-        /**/
         .btn {
         padding: $btn-paddingv $btn-paddingh;
         @include border(lighten(grey,20),10rem);
@@ -113,8 +113,7 @@ header {
         box-shadow:3px 3px 10px lighten(grey,20);
         box-shadow:0.3rem 0.3rem 1rem lighten(grey,20);
         }
-        }
-        /**/
+        }*/
     }
 }
 .fonctionnement {

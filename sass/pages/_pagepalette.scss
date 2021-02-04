@@ -3,6 +3,15 @@
 /**                                          **/
 .corpsresto {
     width :100%;
+    background: lighten($colour-fondgris,$pourcentage-fondlighten);
+    .btnexplorercarte {
+        @include boutonsindexcarte;
+        margin-bottom:50px;
+    }
+    .ajustcolor {
+        margin-bottom:0;
+        height:0.1px;
+    }
 }
 
 a.affichefleche {
@@ -98,6 +107,7 @@ a.affichefleche {
                     color:black;
                     /*position:relative;*/
                     .cartethemeplatcontenu {
+                        background:white;
                         width:94%;
                         height:60px;
                         border-radius:10px;
