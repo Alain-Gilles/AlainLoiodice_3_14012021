@@ -91,7 +91,7 @@ a.affichefleche {
                 margin-bottom:10px;
                 margin-bottom:1rem;
                 /** apparition progressive des cartes menu **/
-                @include apparition(apparitionc1,800ms,ease-in,forward,10ms);
+                /*@include apparition(apparitionc1,1000ms,ease-in,forward,10ms);*/
                 /**/
                 a {
                     text-decoration:none;
@@ -186,6 +186,20 @@ a.affichefleche {
     } /*envelopthemeplat*/
 } /*cartemenu*/
 
+.animcarte1 {
+    @include apparition(apparitionc1,1000ms,ease-in,forward,0ms);
+}
+
+.animcarte2 {
+    @include apparition(apparitionc1,2000ms,ease-in,forward,0ms);
+}
+
+.animcarte3 {
+    @include apparition(apparitionc1,3000ms,ease-in,forward,0ms);
+}
+
+
+
 @keyframes deplacement{
     0% {
         right:-30px;
@@ -209,14 +223,10 @@ a.affichefleche {
     }
 }
 /**/
-@keyframes apparitionc1 {
-    from {
-      opacity: 0;
-    }
-    25%{opacity:0.25;}
-    50%{opacity:0.5;}
-    75%{opacity:0.75;}
-    to {
-      opacity: 1;
-    }
+@keyframes apparitionc1 {    
+    0%{opacity:0;bottom:-15px};
+    25%{opacity:0.10};
+    50%{opacity:0.3};
+    75%{opacity:0.6};
+    100%{opacity:1;bottom:0px};
   }

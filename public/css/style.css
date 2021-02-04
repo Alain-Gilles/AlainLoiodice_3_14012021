@@ -779,10 +779,7 @@ a.affichefleche {
   margin-bottom: 10px;
   margin-bottom: 1rem;
   /** apparition progressive des cartes menu **/
-  animation-name: apparitionc1;
-  animation-duration: 800ms;
-  animation-timing-function: ease-in;
-  animation-delay: 10ms;
+  /*@include apparition(apparitionc1,1000ms,ease-in,forward,10ms);*/
   /**/
   /*a*/
 }
@@ -870,6 +867,27 @@ a.affichefleche {
 }
 
 /*cartemenu*/
+.animcarte1 {
+  animation-name: apparitionc1;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0ms;
+}
+
+.animcarte2 {
+  animation-name: apparitionc1;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0ms;
+}
+
+.animcarte3 {
+  animation-name: apparitionc1;
+  animation-duration: 3000ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0ms;
+}
+
 @keyframes deplacement {
   0% {
     right: -30px;
@@ -893,20 +911,22 @@ a.affichefleche {
 }
 /**/
 @keyframes apparitionc1 {
-  from {
+  0% {
     opacity: 0;
+    bottom: -15px;
   }
   25% {
-    opacity: 0.25;
+    opacity: 0.10;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.3;
   }
   75% {
-    opacity: 0.75;
+    opacity: 0.6;
   }
-  to {
+  100% {
     opacity: 1;
+    bottom: 0px;
   }
 }
 
