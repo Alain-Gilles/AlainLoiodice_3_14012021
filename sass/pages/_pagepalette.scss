@@ -125,9 +125,9 @@ a.affichefleche {
                             }.plat2p {
                                 text-overflow: ellipsis;
                                 /*width: 40px;*/
-                                @media only screen and (max-width: 360px) {
+                                /*@media only screen and (max-width: 360px) {
                                     width:200px;
-                                }
+                                }*/
                                 overflow: hidden;
                                 white-space: nowrap;                                 
                             }

@@ -92,6 +92,7 @@ body {
 /*.btn {
     @include btn
 }*/
+/* animations */
 .pageprincipale {
   animation: pageweb 0ms 3000ms both;
   width: 100%;
@@ -698,6 +699,16 @@ footer .menufooter ul li .fa-hands-helping::before {
     text-shadow: -1px 0 #9356DC, 0 1px #9356DC, 1px 0 #9356DC, 0 -1px #9356DC;
   }
 }
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /**   **/
+  /* page accueil pavé fonctionnement repositionnemnet des vignettes 1,2 et 3 */
+  /* devant choisissez un restaurant, composez votre menu et dégustez au restaurant */
+  /**  **/
+  .btnfonctchiffre {
+    left: 25px;
+    left: 2.5rem;
+  }
+}
 /** page carte restaurant la palette du gout  **/
 /**                                          **/
 /**                                          **/
@@ -860,13 +871,11 @@ a.affichefleche {
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
   text-overflow: ellipsis;
   /*width: 40px;*/
+  /*@media only screen and (max-width: 360px) {
+      width:200px;
+  }*/
   overflow: hidden;
   white-space: nowrap;
-}
-@media only screen and (max-width: 360px) {
-  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
-    width: 200px;
-  }
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .tarif {
   position: absolute;
@@ -980,5 +989,15 @@ a.affichefleche {
     bottom: 0px;
   }
 }
+@media only screen and (max-width: 360px) {
+  /** dans cartes menu sur la deuxième ligne la largeur du paragraphe **/
+  /** est réduite à 200px car le tetexte est trop long, ce qui permet de faire **/
+  /** apparaitre les ... **/
+  /**  **/
+  .plat2p {
+    width: 200px;
+  }
+}
+/*       */
 
 /*# sourceMappingURL=style.css.map */
