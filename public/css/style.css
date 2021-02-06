@@ -402,8 +402,10 @@ header .entetelogo {
   margin-top: 2rem;
   margin-bottom: 10px;
   margin-bottom: 1rem;
-  margin-left: 5px;
-  margin-left: 0.5rem;
+  /*margin-left: 5px;
+  margin-left: 0.5rem;*/
+  padding-left: 10px;
+  padding-left: 1rem;
 }
 
 /** btnfonct **/
@@ -432,6 +434,30 @@ header .entetelogo {
   bottom: 2.8rem;
   left: 15px;
   left: 1.5rem;
+}
+@media only screen and (min-width: 400px) and (max-width: 449px) {
+  .btnfonct .btnfonctchiffre {
+    left: 20px;
+    left: 2.0rem;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+  .btnfonct .btnfonctchiffre {
+    left: 25px;
+    left: 2.5rem;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .btnfonct .btnfonctchiffre {
+    left: 30px;
+    left: 3rem;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 649px) {
+  .btnfonct .btnfonctchiffre {
+    left: 33px;
+    left: 3.3rem;
+  }
 }
 .btnfonct .btnfoncttheme {
   width: 85%;
@@ -565,6 +591,18 @@ header .entetelogo {
   background-size: cover;
   background-position: center;
 }
+@media only screen and (min-width: 450px) and (max-width: 549px) {
+  .restaurants .restaurant1 .carterest a .carterimg1 {
+    height: 180px;
+    height: 18rem;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 649px) {
+  .restaurants .restaurant1 .carterest a .carterimg1 {
+    height: 200px;
+    height: 20rem;
+  }
+}
 .restaurants .restaurant1 .carterest a .nouveau {
   position: absolute;
   top: 10px;
@@ -593,6 +631,18 @@ header .entetelogo {
   background-size: cover;
   background-position: center;
 }
+@media only screen and (min-width: 450px) and (max-width: 549px) {
+  .restaurants .restaurant1 .carterest a .carterimg2 {
+    height: 180px;
+    height: 18rem;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 649px) {
+  .restaurants .restaurant1 .carterest a .carterimg2 {
+    height: 200px;
+    height: 20rem;
+  }
+}
 .restaurants .restaurant1 .carterest a .carterimg3 {
   width: 100%;
   height: 120px;
@@ -608,6 +658,18 @@ header .entetelogo {
   background-size: cover;
   background-position: center;
 }
+@media only screen and (min-width: 450px) and (max-width: 549px) {
+  .restaurants .restaurant1 .carterest a .carterimg3 {
+    height: 180px;
+    height: 18rem;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 649px) {
+  .restaurants .restaurant1 .carterest a .carterimg3 {
+    height: 200px;
+    height: 20rem;
+  }
+}
 .restaurants .restaurant1 .carterest a .carterimg4 {
   width: 100%;
   height: 120px;
@@ -622,6 +684,18 @@ header .entetelogo {
   background-origin: padding-box;
   background-size: cover;
   background-position: center;
+}
+@media only screen and (min-width: 450px) and (max-width: 549px) {
+  .restaurants .restaurant1 .carterest a .carterimg4 {
+    height: 180px;
+    height: 18rem;
+  }
+}
+@media only screen and (min-width: 550px) and (max-width: 649px) {
+  .restaurants .restaurant1 .carterest a .carterimg4 {
+    height: 200px;
+    height: 20rem;
+  }
 }
 .restaurants .restaurant1 .carterest a .descrimgr {
   display: flex;
@@ -697,16 +771,6 @@ footer .menufooter ul li .fa-hands-helping::before {
   100% {
     color: #9356DC;
     text-shadow: -1px 0 #9356DC, 0 1px #9356DC, 1px 0 #9356DC, 0 -1px #9356DC;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 500px) {
-  /**   **/
-  /* page accueil pavé fonctionnement repositionnemnet des vignettes 1,2 et 3 */
-  /* devant choisissez un restaurant, composez votre menu et dégustez au restaurant */
-  /**  **/
-  .btnfonctchiffre {
-    left: 25px;
-    left: 2.5rem;
   }
 }
 /** page carte restaurant la palette du gout  **/
@@ -871,11 +935,23 @@ a.affichefleche {
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
   text-overflow: ellipsis;
   /*width: 40px;*/
-  /*@media only screen and (max-width: 360px) {
-      width:200px;
-  }*/
   overflow: hidden;
   white-space: nowrap;
+}
+@media only screen and (max-width: 319px) {
+  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
+    width: 180px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 360px) {
+  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 361px) and (max-width: 400px) {
+  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
+    width: 240px;
+  }
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .tarif {
   position: absolute;
@@ -906,8 +982,14 @@ a.affichefleche {
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatcontenu .plat2p {
   /* largeur du texte à partir duquel apparait  ... en overflow */
-  width: 200px;
-  width: 20rem;
+  /*width:200px;
+  width:20rem;*/
+}
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatcontenu .plat2p {
+    width: 200px !important;
+    width: 20rem !important;
+  }
 }
 .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatcontenu .plat .tarif {
   right: 55px;
@@ -987,15 +1069,6 @@ a.affichefleche {
   100% {
     opacity: 1;
     bottom: 0px;
-  }
-}
-@media only screen and (max-width: 360px) {
-  /** dans cartes menu sur la deuxième ligne la largeur du paragraphe **/
-  /** est réduite à 200px car le tetexte est trop long, ce qui permet de faire **/
-  /** apparaitre les ... **/
-  /**  **/
-  .plat2p {
-    width: 200px;
   }
 }
 /*       */

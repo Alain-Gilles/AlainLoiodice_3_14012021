@@ -125,9 +125,15 @@ a.affichefleche {
                             }.plat2p {
                                 text-overflow: ellipsis;
                                 /*width: 40px;*/
-                                /*@media only screen and (max-width: 360px) {
+                                @media only screen and (max-width: 319px) {
+                                    width:180px;
+                                }
+                                @media only screen and (min-width:320px) and (max-width: 360px) {
                                     width:200px;
-                                }*/
+                                }
+                                @media only screen and (min-width:361px) and (max-width: 400px) {
+                                    width:240px;
+                                }
                                 overflow: hidden;
                                 white-space: nowrap;                                 
                             }
@@ -167,14 +173,18 @@ a.affichefleche {
                 .cartethemeplatcontenu {
                     .plat2p {
                         /* largeur du texte à partir duquel apparait  ... en overflow */
-                        width:200px;
-                        width:20rem;
-                        }
+                        /*width:200px;
+                        width:20rem;*/
+                        @media only screen and (min-width:320px) and (max-width: 400px) {
+                            width:200px !important;
+                            width:20rem !important;
+                        }                        
+                    }
                     .plat {
                         .tarif {
                             right:55px;
                             right:5.5rem;
-                        }
+                            }
                     }
                 }
                 .cartethemeplatselect {
@@ -189,12 +199,13 @@ a.affichefleche {
                         animation-fill-mode:both;
                     }
                 }
-            }/*envelopcartethemeplatcontenu:hover*/   
-                      
+            }/*envelopcartethemeplatcontenu:hover*/                                              
         } /*cartethemeplat*/
 
     } /*envelopthemeplat*/
 } /*cartemenu*/
+
+
 
 .animcarte1 {
     @include apparition(apparitionc1,1000ms,ease-in,forward,0ms);
