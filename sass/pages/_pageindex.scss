@@ -171,7 +171,55 @@ header {
         @media only screen and (min-width:600px) and (max-width: 649px) {    
             left:33px;
             left:3.3rem;
-        }            
+        }
+        @media only screen and (min-width:650px) and (max-width: 749px) {    
+            left:40px;
+            left:4rem;
+        } 
+        @media only screen and (min-width:750px) and (max-width: 829px) {    
+            left:45px;
+            left:4.5rem;
+        }
+        @media only screen and (min-width:830px) and (max-width: 899px) {    
+            left:50px;
+            left:5rem;
+        }
+        @media only screen and (min-width:900px) and (max-width: 949px) {    
+            left:55px;
+            left:5.5rem;
+        } 
+        @media only screen and (min-width:950px) and (max-width: 999px) {    
+            left:60px;
+            left:6rem;
+        }
+        @media only screen and (min-width:1000px) and (max-width: 1099px) {    
+            left:70px;
+            left:7rem;
+        }  
+        @media only screen and (min-width:1100px) and (max-width: 1199px) {    
+            left:75px;
+            left:7.5rem;
+        }
+        @media only screen and (min-width:1200px) and (max-width: 1299px) {    
+            left:80px;
+            left:8rem;
+        } 
+        @media only screen and (min-width:1300px) and (max-width: 1399px) {    
+            left:85px;
+            left:8.5rem;
+        } 
+        @media only screen and (min-width:1400px) and (max-width: 1499px) {    
+            left:90px;
+            left:9rem;
+        } 
+        @media only screen and (min-width:1500px) and (max-width: 1599px) {    
+            left:95px;
+            left:9.5rem;
+        }
+        @media only screen and (min-width:1599px) { 
+            left:105px;
+            left:10.5rem;
+        }                                                    
     }
     .btnfoncttheme {
         width:85%;
@@ -293,7 +341,31 @@ header {
                     @media only screen and (min-width:550px) and (max-width: 649px) {
                         height:200px;
                         height:20rem;
-                    }        
+                    } 
+                    @media only screen and (min-width:650px) and (max-width: 849px) {
+                        height:220px;
+                        height:22rem;
+                    }
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:240px;
+                        height:24rem;
+                    }
+                    @media only screen and (min-width:1050px) and (max-width: 1249px) {
+                        height:280px;
+                        height:28rem;
+                    } 
+                    @media only screen and (min-width:1250px) and (max-width: 1449px) {
+                        height:320px;
+                        height:32rem;
+                    }  
+                    @media only screen and (min-width:1450px) and (max-width: 1599px) {
+                        height:360px;
+                        height:36rem;
+                    } 
+                    @media only screen and (min-width:1600px) {
+                        height:400px;
+                        height:40rem;
+                    }                             
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -329,7 +401,31 @@ header {
                     @media only screen and (min-width:550px) and (max-width: 649px) {
                         height:200px;
                         height:20rem;
-                    }         
+                    }
+                    @media only screen and (min-width:650px) and (max-width: 849px) {
+                        height:220px;
+                        height:22rem;
+                    }
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:240px;
+                        height:24rem;
+                    }
+                    @media only screen and (min-width:1050px) and (max-width: 1249px) {
+                        height:280px;
+                        height:28rem;
+                    }
+                    @media only screen and (min-width:1250px) and (max-width: 1449px) {
+                        height:320px;
+                        height:32rem;
+                    } 
+                    @media only screen and (min-width:1450px) and (max-width: 1599px) {
+                        height:360px;
+                        height:36rem;
+                    } 
+                    @media only screen and (min-width:1600px) {
+                        height:400px;
+                        height:40rem;
+                    }                                       
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -352,7 +448,31 @@ header {
                     @media only screen and (min-width:550px) and (max-width: 649px) {
                         height:200px;
                         height:20rem;
-                    }      
+                    }
+                    @media only screen and (min-width:650px) and (max-width: 849px) {
+                        height:220px;
+                        height:22rem;
+                    }
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:240px;
+                        height:24rem;
+                    } 
+                    @media only screen and (min-width:1050px) and (max-width: 1249px) {
+                        height:280px;
+                        height:28rem;
+                    }
+                    @media only screen and (min-width:1250px) and (max-width: 1449px) {
+                        height:320px;
+                        height:32rem;
+                    } 
+                    @media only screen and (min-width:1450px) and (max-width: 1599px) {
+                        height:360px;
+                        height:36rem;
+                    }
+                    @media only screen and (min-width:1600px) {
+                        height:400px;
+                        height:40rem;
+                    }                                    
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -375,7 +495,31 @@ header {
                     @media only screen and (min-width:550px) and (max-width: 649px) {
                         height:200px;
                         height:20rem;
-                    }       
+                    }
+                    @media only screen and (min-width:650px) and (max-width: 849px) {
+                        height:220px;
+                        height:22rem;
+                    }
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:240px;
+                        height:24rem;
+                    }
+                    @media only screen and (min-width:1050px) and (max-width: 1249px) {
+                        height:280px;
+                        height:28rem;
+                    }
+                    @media only screen and (min-width:1250px) and (max-width: 1449px) {
+                        height:320px;
+                        height:32rem;
+                    }
+                    @media only screen and (min-width:1450px) and (max-width: 1599px) {
+                        height:360px;
+                        height:36rem;
+                    } 
+                    @media only screen and (min-width:1600px) {
+                        height:400px;
+                        height:40rem;
+                    }                                      
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;

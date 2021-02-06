@@ -220,7 +220,7 @@ a.affichefleche {
 }
 
 
-
+@media only screen and (max-width: 489px) { 
 @keyframes deplacement{
     0% {
         right:-30px;
@@ -232,6 +232,176 @@ a.affichefleche {
         right:20px;
     }
 }
+}
+
+@media only screen and (min-width:490px) and (max-width:599px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:30px;
+        }
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:699px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:35px;
+        }
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:799px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:40px;
+        }
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:899px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:45px;
+        }
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width:999px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:50px;
+        }
+    }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1099px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:55px;
+        }
+    }
+}
+
+@media only screen and (min-width:1100px) and (max-width:1199px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:60px;
+        }
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1299px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:65px;
+        }
+    }
+}
+
+@media only screen and (min-width:1300px) and (max-width:1399px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:70px;
+        }
+    }
+}
+
+@media only screen and (min-width:1400px) and (max-width:1499px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:75px;
+        }
+    }
+}
+
+@media only screen and (min-width:1500px) and (max-width:1599px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:80px;
+        }
+    }
+}
+
+@media only screen and (min-width:1599px) {
+    @keyframes deplacement{
+        0% {
+            right:-30px;
+        }
+        50% {
+            right:0px;
+        }
+        100% {
+            right:85px;
+        }
+    }
+}
+
 
 @keyframes rotationicone{
     0% {

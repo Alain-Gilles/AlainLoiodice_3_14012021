@@ -3,6 +3,12 @@
 {
     animation: pageweb 0ms 3000ms both;
     width: 100%;
+    /* ajout le 06022021 */
+    @media only screen and (min-width:1270px) { 
+        width:90%;
+    }    
+    margin:0 auto;
+    /* fin ajout le 06022021 */
     /*height:100%;*/
     position: absolute;
     top:0;

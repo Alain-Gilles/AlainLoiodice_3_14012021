@@ -86,7 +86,13 @@ body {
 
 .wrapper {
   width: 100%;
-  margin: 0 auto;
+  /*margin:0 auto;*/
+}
+@media only screen and (min-width: 1270px) {
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /*.btn {
@@ -96,12 +102,20 @@ body {
 .pageprincipale {
   animation: pageweb 0ms 3000ms both;
   width: 100%;
+  /* ajout le 06022021 */
+  margin: 0 auto;
+  /* fin ajout le 06022021 */
   /*height:100%;*/
   position: absolute;
   top: 0;
   z-index: 1;
   overflow: hidden;
   background-color: #F4FCF8;
+}
+@media only screen and (min-width: 1270px) {
+  .pageprincipale {
+    width: 90%;
+  }
 }
 
 .loader {
@@ -459,6 +473,78 @@ header .entetelogo {
     left: 3.3rem;
   }
 }
+@media only screen and (min-width: 650px) and (max-width: 749px) {
+  .btnfonct .btnfonctchiffre {
+    left: 40px;
+    left: 4rem;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 829px) {
+  .btnfonct .btnfonctchiffre {
+    left: 45px;
+    left: 4.5rem;
+  }
+}
+@media only screen and (min-width: 830px) and (max-width: 899px) {
+  .btnfonct .btnfonctchiffre {
+    left: 50px;
+    left: 5rem;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 949px) {
+  .btnfonct .btnfonctchiffre {
+    left: 55px;
+    left: 5.5rem;
+  }
+}
+@media only screen and (min-width: 950px) and (max-width: 999px) {
+  .btnfonct .btnfonctchiffre {
+    left: 60px;
+    left: 6rem;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1099px) {
+  .btnfonct .btnfonctchiffre {
+    left: 70px;
+    left: 7rem;
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
+  .btnfonct .btnfonctchiffre {
+    left: 75px;
+    left: 7.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+  .btnfonct .btnfonctchiffre {
+    left: 80px;
+    left: 8rem;
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .btnfonct .btnfonctchiffre {
+    left: 85px;
+    left: 8.5rem;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1499px) {
+  .btnfonct .btnfonctchiffre {
+    left: 90px;
+    left: 9rem;
+  }
+}
+@media only screen and (min-width: 1500px) and (max-width: 1599px) {
+  .btnfonct .btnfonctchiffre {
+    left: 95px;
+    left: 9.5rem;
+  }
+}
+@media only screen and (min-width: 1599px) {
+  .btnfonct .btnfonctchiffre {
+    left: 105px;
+    left: 10.5rem;
+  }
+}
 .btnfonct .btnfoncttheme {
   width: 85%;
   margin-bottom: 15px;
@@ -603,6 +689,42 @@ header .entetelogo {
     height: 20rem;
   }
 }
+@media only screen and (min-width: 650px) and (max-width: 849px) {
+  .restaurants .restaurant1 .carterest a .carterimg1 {
+    height: 220px;
+    height: 22rem;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1049px) {
+  .restaurants .restaurant1 .carterest a .carterimg1 {
+    height: 240px;
+    height: 24rem;
+  }
+}
+@media only screen and (min-width: 1050px) and (max-width: 1249px) {
+  .restaurants .restaurant1 .carterest a .carterimg1 {
+    height: 280px;
+    height: 28rem;
+  }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1449px) {
+  .restaurants .restaurant1 .carterest a .carterimg1 {
+    height: 320px;
+    height: 32rem;
+  }
+}
+@media only screen and (min-width: 1450px) and (max-width: 1599px) {
+  .restaurants .restaurant1 .carterest a .carterimg1 {
+    height: 360px;
+    height: 36rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .restaurants .restaurant1 .carterest a .carterimg1 {
+    height: 400px;
+    height: 40rem;
+  }
+}
 .restaurants .restaurant1 .carterest a .nouveau {
   position: absolute;
   top: 10px;
@@ -643,6 +765,42 @@ header .entetelogo {
     height: 20rem;
   }
 }
+@media only screen and (min-width: 650px) and (max-width: 849px) {
+  .restaurants .restaurant1 .carterest a .carterimg2 {
+    height: 220px;
+    height: 22rem;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1049px) {
+  .restaurants .restaurant1 .carterest a .carterimg2 {
+    height: 240px;
+    height: 24rem;
+  }
+}
+@media only screen and (min-width: 1050px) and (max-width: 1249px) {
+  .restaurants .restaurant1 .carterest a .carterimg2 {
+    height: 280px;
+    height: 28rem;
+  }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1449px) {
+  .restaurants .restaurant1 .carterest a .carterimg2 {
+    height: 320px;
+    height: 32rem;
+  }
+}
+@media only screen and (min-width: 1450px) and (max-width: 1599px) {
+  .restaurants .restaurant1 .carterest a .carterimg2 {
+    height: 360px;
+    height: 36rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .restaurants .restaurant1 .carterest a .carterimg2 {
+    height: 400px;
+    height: 40rem;
+  }
+}
 .restaurants .restaurant1 .carterest a .carterimg3 {
   width: 100%;
   height: 120px;
@@ -670,6 +828,42 @@ header .entetelogo {
     height: 20rem;
   }
 }
+@media only screen and (min-width: 650px) and (max-width: 849px) {
+  .restaurants .restaurant1 .carterest a .carterimg3 {
+    height: 220px;
+    height: 22rem;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1049px) {
+  .restaurants .restaurant1 .carterest a .carterimg3 {
+    height: 240px;
+    height: 24rem;
+  }
+}
+@media only screen and (min-width: 1050px) and (max-width: 1249px) {
+  .restaurants .restaurant1 .carterest a .carterimg3 {
+    height: 280px;
+    height: 28rem;
+  }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1449px) {
+  .restaurants .restaurant1 .carterest a .carterimg3 {
+    height: 320px;
+    height: 32rem;
+  }
+}
+@media only screen and (min-width: 1450px) and (max-width: 1599px) {
+  .restaurants .restaurant1 .carterest a .carterimg3 {
+    height: 360px;
+    height: 36rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .restaurants .restaurant1 .carterest a .carterimg3 {
+    height: 400px;
+    height: 40rem;
+  }
+}
 .restaurants .restaurant1 .carterest a .carterimg4 {
   width: 100%;
   height: 120px;
@@ -695,6 +889,42 @@ header .entetelogo {
   .restaurants .restaurant1 .carterest a .carterimg4 {
     height: 200px;
     height: 20rem;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 849px) {
+  .restaurants .restaurant1 .carterest a .carterimg4 {
+    height: 220px;
+    height: 22rem;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1049px) {
+  .restaurants .restaurant1 .carterest a .carterimg4 {
+    height: 240px;
+    height: 24rem;
+  }
+}
+@media only screen and (min-width: 1050px) and (max-width: 1249px) {
+  .restaurants .restaurant1 .carterest a .carterimg4 {
+    height: 280px;
+    height: 28rem;
+  }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1449px) {
+  .restaurants .restaurant1 .carterest a .carterimg4 {
+    height: 320px;
+    height: 32rem;
+  }
+}
+@media only screen and (min-width: 1450px) and (max-width: 1599px) {
+  .restaurants .restaurant1 .carterest a .carterimg4 {
+    height: 360px;
+    height: 36rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .restaurants .restaurant1 .carterest a .carterimg4 {
+    height: 400px;
+    height: 40rem;
   }
 }
 .restaurants .restaurant1 .carterest a .descrimgr {
@@ -1030,15 +1260,173 @@ a.affichefleche {
   animation-delay: 0ms;
 }
 
-@keyframes deplacement {
-  0% {
-    right: -30px;
+@media only screen and (max-width: 489px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 20px;
+    }
   }
-  50% {
-    right: 0px;
+}
+@media only screen and (min-width: 490px) and (max-width: 599px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 30px;
+    }
   }
-  100% {
-    right: 20px;
+}
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 35px;
+    }
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 40px;
+    }
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 45px;
+    }
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 999px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 50px;
+    }
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1099px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 55px;
+    }
+  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1199px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 60px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 65px;
+    }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 70px;
+    }
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1499px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 75px;
+    }
+  }
+}
+@media only screen and (min-width: 1500px) and (max-width: 1599px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 80px;
+    }
+  }
+}
+@media only screen and (min-width: 1599px) {
+  @keyframes deplacement {
+    0% {
+      right: -30px;
+    }
+    50% {
+      right: 0px;
+    }
+    100% {
+      right: 85px;
+    }
   }
 }
 @keyframes rotationicone {

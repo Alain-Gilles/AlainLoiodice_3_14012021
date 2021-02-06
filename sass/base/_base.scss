@@ -22,5 +22,9 @@ body {
 
 .wrapper {
     width:100%;
-    margin:0 auto;
+    @media only screen and (min-width:1270px) { 
+        width:90%;
+        margin:0 auto;
+    }    
+    /*margin:0 auto;*/
 }
