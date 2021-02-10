@@ -142,6 +142,18 @@ body {
   animation-direction: normal;
   animation-timing-function: ease-in-out;
 }
+@media only screen and (min-width: 290) and (max-width: 329px) {
+  .loader .load {
+    font-size: 20px;
+    font-size: 2.0rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .loader .load {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+}
 .loader .load .load__let1 {
   text-align: center;
   animation: lettres1 1000ms both;
@@ -481,6 +493,10 @@ header .entetelogo {
   bottom: 2.8rem;
   left: 15px;
   left: 1.5rem;
+  /*
+  Attention sur wrapper definition d'un média queries avec pour min-width 1270px un width de 90%  
+  La marge n'est plus calculée à partir de wrapper = 100% mais de wrapper = 90% du body
+  */
 }
 @media only screen and (min-width: 400px) and (max-width: 449px) {
   .btnfonct .btnfonctchiffre {
@@ -548,40 +564,47 @@ header .entetelogo {
     left: 7.5rem;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+@media only screen and (min-width: 1200px) and (max-width: 1269px) {
   .btnfonct .btnfonctchiffre {
     left: 80px;
     left: 8rem;
   }
 }
-@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+@media only screen and (min-width: 1270px) and (max-width: 1339px) {
   .btnfonct .btnfonctchiffre {
-    left: 85px;
-    left: 8.5rem;
+    left: 65px;
+    left: 6.5rem;
+  }
+}
+@media only screen and (min-width: 1340px) and (max-width: 1399px) {
+  .btnfonct .btnfonctchiffre {
+    left: 70px;
+    left: 7rem;
   }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1499px) {
   .btnfonct .btnfonctchiffre {
-    left: 90px;
-    left: 9rem;
+    left: 75px;
+    left: 7.5rem;
   }
 }
 @media only screen and (min-width: 1500px) and (max-width: 1599px) {
   .btnfonct .btnfonctchiffre {
-    left: 95px;
-    left: 9.5rem;
+    left: 80px;
+    left: 8rem;
   }
 }
 @media only screen and (min-width: 1599px) {
   .btnfonct .btnfonctchiffre {
-    left: 105px;
-    left: 10.5rem;
+    left: 80px;
+    left: 8rem;
   }
 }
 .btnfonct .btnfoncttheme {
   width: 85%;
   font-size: 14px;
   font-size: 1.4rem;
+  text-align: justify;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
   border: 1px solid #b3b3b3;
@@ -611,6 +634,64 @@ header .entetelogo {
           color: darken($colour-primary,20)
       }
   }*/
+  /*.fa-mobile-alt::before {
+      margin-right:18px;
+      margin-right:1.8rem;
+      margin-right:0px;
+      padding-left:10px;
+  }
+  .fa-list-ul::before {
+      margin-right:18px;
+      margin-right:1.8rem;
+      margin-right:0px;
+      padding-left:10px;                  
+  }
+  .fa-store::before {
+      margin-right:18px;
+      margin-right:1.8rem;
+      margin-right:0px;
+      padding-left:10px;
+  }*/
+}
+@media only screen and (max-width: 329px) {
+  .btnfonct .btnfoncttheme .btnopt {
+    margin-left: 5%;
+  }
+}
+@media only screen and (min-width: 330px) and (max-width: 399px) {
+  .btnfonct .btnfoncttheme .btnopt {
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+  .btnfonct .btnfoncttheme .btnopt {
+    margin-left: 15%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .btnfonct .btnfoncttheme .btnopt {
+    margin-left: 20%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+  .btnfonct .btnfoncttheme .btnopt {
+    margin-left: 20%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+  .btnfonct .btnfoncttheme .btnopt {
+    margin-left: 22%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+  .btnfonct .btnfoncttheme .btnopt {
+    margin-left: 25%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .btnfonct .btnfoncttheme .btnopt {
+    margin-left: 30%;
+  }
 }
 @media only screen and (min-width: 599px) and (max-width: 799px) {
   .btnfonct .btnfoncttheme {
@@ -650,17 +731,49 @@ header .entetelogo {
 .btnfonct .btnfoncttheme:active .fa-store {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme .fa-mobile-alt::before {
-  margin-right: 18px;
-  margin-right: 1.8rem;
+.btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  margin-right: 0px;
+  /*padding-left:10px;*/
 }
-.btnfonct .btnfoncttheme .fa-list-ul::before {
-  margin-right: 18px;
-  margin-right: 1.8rem;
+@media only screen and (max-width: 329px) {
+  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+    padding-left: 10px;
+  }
 }
-.btnfonct .btnfoncttheme .fa-store::before {
-  margin-right: 18px;
-  margin-right: 1.8rem;
+@media only screen and (min-width: 330px) and (max-width: 399px) {
+  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+    padding-left: 15px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+    padding-left: 35px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 699px) {
+  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+    padding-left: 40px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 799px) {
+  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+    padding-left: 50px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+    padding-left: 60px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+    padding-left: 70px;
+  }
 }
 
 /** restaurants **/

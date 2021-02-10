@@ -211,31 +211,81 @@ header {
             left:75px;
             left:7.5rem;
         }
-        @media only screen and (min-width:1200px) and (max-width: 1299px) {    
+        @media only screen and (min-width:1200px) and (max-width: 1269px) {    
             left:80px;
             left:8rem;
-        } 
-        @media only screen and (min-width:1300px) and (max-width: 1399px) {    
-            left:85px;
-            left:8.5rem;
+        }
+        /*
+        Attention sur wrapper definition d'un média queries avec pour min-width 1270px un width de 90%  
+        La marge n'est plus calculée à partir de wrapper = 100% mais de wrapper = 90% du body
+        */
+        @media only screen and (min-width:1270px) and (max-width: 1339px) {    
+            left:65px;
+            left:6.5rem;
+        }
+        @media only screen and (min-width:1340px) and (max-width: 1399px) {    
+            left:70px;
+            left:7rem;
         } 
         @media only screen and (min-width:1400px) and (max-width: 1499px) {    
-            left:90px;
-            left:9rem;
+            left:75px;
+            left:7.5rem;
         } 
         @media only screen and (min-width:1500px) and (max-width: 1599px) {    
-            left:95px;
-            left:9.5rem;
+            left:80px;
+            left:8rem;
         }
         @media only screen and (min-width:1599px) { 
-            left:105px;
-            left:10.5rem;
+            left:80px;
+            left:8rem;
         }                                                    
     }
     .btnfoncttheme {
         width:85%;
         font-size: 14px;
         font-size: 1.4rem;
+        text-align:justify;
+        @media only screen and (max-width: 329px) {
+            .btnopt {
+             margin-left:5%;
+            }
+        }
+        @media only screen and (min-width:330px) and (max-width: 399px) {
+            .btnopt {
+             margin-left:10%;
+            }
+        }
+        @media only screen and (min-width:400px) and (max-width: 499px) {
+            .btnopt {
+             margin-left:15%;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width: 599px) {
+            .btnopt {
+             margin-left:20%;
+            }
+        }
+        @media only screen and (min-width:600px) and (max-width: 699px) {
+            .btnopt {
+             margin-left:20%;
+            }
+        }
+        @media only screen and (min-width:700px) and (max-width: 799px) {
+            .btnopt {
+             margin-left:22%;
+            }
+        }
+        @media only screen and (min-width:800px) and (max-width: 999px) {
+            .btnopt {
+             margin-left:25%;
+            }
+        }
+        @media only screen and (min-width:1000px) {
+            .btnopt {
+             margin-left:30%;
+            }
+        }
+        
         @media only screen and (min-width:599px) and (max-width: 799px) {
             font-size: 15px;
             font-size: 1.5rem;
@@ -300,18 +350,54 @@ header {
                 color: darken($colour-primary,20)
             }
         }*/
-        .fa-mobile-alt::before {
+
+        .fa-mobile-alt::before, .fa-list-ul::before, .fa-store::before {
+            margin-right:0px;
+            /*padding-left:10px;*/
+            @media only screen and (max-width: 329px) {
+                padding-left:10px;
+            }
+            @media only screen and (min-width:330px) and (max-width: 399px) {
+                padding-left:15px;
+            }
+            @media only screen and (min-width:400px) and (max-width: 499px) {
+                padding-left:30px;
+            }           
+            @media only screen and (min-width:500px) and (max-width: 599px) {
+                padding-left:35px;
+            }
+            @media only screen and (min-width:600px) and (max-width: 699px) {
+                padding-left:40px;
+            }
+            @media only screen and (min-width:700px) and (max-width: 799px) {
+                padding-left:50px;
+            }
+            @media only screen and (min-width:800px) and (max-width: 899px) {
+                padding-left:60px;
+            }
+            @media only screen and (min-width:900px) {
+                padding-left:70px;
+            }
+        }
+
+        /*.fa-mobile-alt::before {
             margin-right:18px;
             margin-right:1.8rem;
-            }
+            margin-right:0px;
+            padding-left:10px;
+        }
         .fa-list-ul::before {
             margin-right:18px;
             margin-right:1.8rem;
-            }
+            margin-right:0px;
+            padding-left:10px;                  
+        }
         .fa-store::before {
             margin-right:18px;
             margin-right:1.8rem;
-            }
+            margin-right:0px;
+            padding-left:10px;
+        }*/
     }
 }
 
