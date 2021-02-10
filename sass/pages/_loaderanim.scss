@@ -3,22 +3,25 @@
 {
     animation: pageweb 0ms 3000ms both;
     width: 100%;
-    /* ajout le 06022021 */
+   
     @media only screen and (min-width:1270px) { 
         width:90%;
     }    
-    margin:0 auto;
-    /* fin ajout le 06022021 */
-    /*height:100%;*/
-    position: absolute;
+    margin:0 auto;    
+    /*position: absolute;
     top:0;
     z-index:1;
-    overflow: hidden;
-    /*background-color: #F4FCF8;*/
+    overflow: hidden;*/   
     background-color: white;
 }
 
   .loader {
+
+    /** ajout du 10022021 **/
+    position:absolute;
+    top:0;
+    /**********************/
+
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-start;
@@ -98,18 +101,21 @@
         /*     */
 	    width:40%;
 	    text-align:center;
-	    animation: animparis 1000ms 1000ms both;        
+	    animation: animparis 1400ms 1200ms both;        
         animation-direction:normal;
         animation-timing-function: ease-in-out; 
     }
 }
 
+
 @keyframes pageweb {
     0% {
-      transform: translateX(-9999px);
+      /*transform: translateX(-9999px);*/
+      visibility:hidden;
     }
     100% {
-      transform: translateX(0);
+      /*transform: translateX(0);*/
+      visibility:visible;
     }
   }
 
@@ -220,6 +226,7 @@
 		/*transform:translate(-25%);*/
         /*transform:translate(-95px);*/
         transform:translate(-55px);
+        visibility:hidden;
 	}
 }
 
@@ -232,6 +239,7 @@
   100% 
         {
 		transform:translate(10px,220px) scale(0.75);
+        visibility:hidden;
 	}
 }
 
