@@ -647,13 +647,16 @@ header {
                     justify-content:space-between;
                     align-items:center;
                     position:relative;
-                    .descritexte {
+                    .descritexte {                        
                         padding-left:10px;
                         padding-left:1rem;
                         padding-top:10px;
                         padding-top:1rem;
                         padding-bottom:10px;
                         padding-bottom:1rem;
+                        .descritexte1{
+                            font-weight:bold;
+                        }
                     }
                     .coeur {
                         padding-right:10px;
@@ -697,6 +700,15 @@ footer {
             padding-left:10px;
             padding-left:1rem;
             font-family: 'Shrikhand', sans-serif;
+            @media only screen and (min-width:320px) and (max-width: 399px) {
+                font-size:16px;
+                font-size:1.6rem;
+            }
+            @media only screen and (min-width:400px) {
+                font-size:20px;
+                font-size:2rem;
+            }
+
         }
         ul {
             padding-left:10px;
@@ -712,14 +724,51 @@ footer {
                     color: white;
                     font-size: 10px;
                     font-size: 1.0rem;
+                    line-height:1.8;
+                    @media only screen and (min-width:320px) and (max-width: 399px) {
+                        font-size:12px;
+                        font-size:1.2rem;
+                    }
+                    @media only screen and (min-width:400px) and (max-width: 799px) {
+                        font-size:14px;
+                        font-size:1.4rem;
+                    }
+                    @media only screen and (min-width:800px) {
+                        font-size:15px;
+                        font-size:1.5rem;
+                    }
                 }
                 .fa-utensils::before {
                     margin-right:10px;
                     margin-right:1rem;
+                    @media only screen and (min-width:320px) and (max-width: 399px) {
+                        font-size:12px;
+                        font-size:1.2rem;
+                    }
+                    @media only screen and (min-width:400px) and (max-width: 799px) {
+                        font-size:14px;
+                        font-size:1.4rem;
+                    }
+                    @media only screen and (min-width:800px) {
+                        font-size:15px;
+                        font-size:1.5rem;
+                    }
                 }
                 .fa-hands-helping::before {
                     margin-right:10px;
                     margin-right:1rem;
+                    @media only screen and (min-width:320px) and (max-width: 399px) {
+                        font-size:12px;
+                        font-size:1.2rem;
+                    }
+                    @media only screen and (min-width:400px) and (max-width: 799px) {
+                        font-size:14px;
+                        font-size:1.4rem;
+                    }
+                    @media only screen and (min-width:800px) {
+                        font-size:15px;
+                        font-size:1.5rem;
+                    }
                 }
             } 
         }

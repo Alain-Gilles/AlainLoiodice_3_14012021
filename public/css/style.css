@@ -1104,6 +1104,9 @@ header .entetelogo {
   padding-bottom: 10px;
   padding-bottom: 1rem;
 }
+.restaurants .restaurant1 .carterest a .descrimgr .descritexte .descritexte1 {
+  font-weight: bold;
+}
 .restaurants .restaurant1 .carterest a .descrimgr .coeur {
   padding-right: 10px;
   padding-right: 1rem;
@@ -1132,6 +1135,18 @@ footer .menufooter p {
   padding-left: 1rem;
   font-family: 'Shrikhand', sans-serif;
 }
+@media only screen and (min-width: 320px) and (max-width: 399px) {
+  footer .menufooter p {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 400px) {
+  footer .menufooter p {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
 footer .menufooter ul {
   padding-left: 10px;
   padding-left: 1rem;
@@ -1146,14 +1161,69 @@ footer .menufooter ul li a {
   color: white;
   font-size: 10px;
   font-size: 1.0rem;
+  line-height: 1.8;
+}
+@media only screen and (min-width: 320px) and (max-width: 399px) {
+  footer .menufooter ul li a {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  footer .menufooter ul li a {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  footer .menufooter ul li a {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
 }
 footer .menufooter ul li .fa-utensils::before {
   margin-right: 10px;
   margin-right: 1rem;
 }
+@media only screen and (min-width: 320px) and (max-width: 399px) {
+  footer .menufooter ul li .fa-utensils::before {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  footer .menufooter ul li .fa-utensils::before {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  footer .menufooter ul li .fa-utensils::before {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+}
 footer .menufooter ul li .fa-hands-helping::before {
   margin-right: 10px;
   margin-right: 1rem;
+}
+@media only screen and (min-width: 320px) and (max-width: 399px) {
+  footer .menufooter ul li .fa-hands-helping::before {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  footer .menufooter ul li .fa-hands-helping::before {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  footer .menufooter ul li .fa-hands-helping::before {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
 }
 
 @keyframes remplissagecoeur {
