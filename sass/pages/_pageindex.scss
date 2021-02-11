@@ -420,7 +420,8 @@ header {
         }
     .restaurant1 {
         width:90%;
-        margin-left:4%;
+        /*margin-left:4%;*/
+        margin:auto;
         display:flex;
         flex-direction:column;
         justify-content:center;

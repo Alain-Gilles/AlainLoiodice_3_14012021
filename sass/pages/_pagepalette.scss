@@ -148,7 +148,8 @@ a.affichefleche {
                             position:relative;
                             .plat1p {
                                 font-weight:bold;
-                            }.plat2p {
+                            }
+                            .plat2p {
                                 text-overflow: ellipsis;
                                 /*width: 40px;*/
                                 @media only screen and (max-width: 319px) {
