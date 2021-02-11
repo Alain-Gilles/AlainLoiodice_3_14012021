@@ -126,7 +126,9 @@ a.affichefleche {
                 /** apparition progressive des cartes menu **/
                 /*@include apparition(apparitionc1,1000ms,ease-in,forward,10ms);*/
                 /**/
-                a {
+                /*a {*/
+                .liencartethemeplatcontenu {
+                    cursor: pointer;
                     text-decoration:none;
                     color:black;
                     /*position:relative;*/
@@ -190,7 +192,7 @@ a.affichefleche {
                             font-weight:bold;
                         }
                     }
-                }/*a*/
+                }/*a remplace par liencartethemeplatcontenu*/
             } /*envelopcartethemeplatcontenu*/   
 
             .envelopcartethemeplatcontenu:hover {

@@ -1334,14 +1334,16 @@ a.affichefleche {
   /** apparition progressive des cartes menu **/
   /*@include apparition(apparitionc1,1000ms,ease-in,forward,10ms);*/
   /**/
-  /*a*/
+  /*a {*/
+  /*a remplace par liencartethemeplatcontenu*/
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a {
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu {
+  cursor: pointer;
   text-decoration: none;
   color: black;
   /*position:relative;*/
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu {
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu {
   background: white;
   width: 94%;
   height: 60px;
@@ -1349,7 +1351,7 @@ a.affichefleche {
   border-radius: 1rem;
   box-shadow: 2px 2px 6px grey;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat {
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat {
   margin-left: 4%;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -1357,38 +1359,38 @@ a.affichefleche {
   padding-bottom: 0.5rem;
   position: relative;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat1p {
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat1p {
   font-weight: bold;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p {
   text-overflow: ellipsis;
   /*width: 40px;*/
   overflow: hidden;
   white-space: nowrap;
 }
 @media only screen and (max-width: 319px) {
-  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
+  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p {
     width: 180px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 360px) {
-  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
+  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p {
     width: 200px;
   }
 }
 @media only screen and (min-width: 361px) and (max-width: 400px) {
-  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .plat2p {
+  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p {
     width: 240px;
   }
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatcontenu .plat .tarif {
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .tarif {
   position: absolute;
   bottom: 5px;
   right: 15px;
   bottom: 0.5rem;
   right: 1.5rem;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatselect {
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatselect {
   width: 50px;
   width: 5rem;
   height: 60px;
@@ -1400,7 +1402,7 @@ a.affichefleche {
   top: 0px;
   right: -500px;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu a .cartethemeplatselect p {
+.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatselect p {
   text-align: center;
   padding-top: 30%;
   color: white;
