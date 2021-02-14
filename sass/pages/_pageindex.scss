@@ -656,6 +656,9 @@ header {
                         padding-bottom:1rem;
                         .descritexte1{
                             font-weight:bold;
+                            &::first-letter {
+                                text-transform:capitalize;
+                            }
                         }
                     }
                     .coeur {
