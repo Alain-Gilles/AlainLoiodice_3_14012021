@@ -123,19 +123,26 @@ header {
     h2 {
         margin-top: 20px;
         margin-top: 2rem;
-        margin-bottom: 10px;
-        margin-bottom: 1rem;
+        margin-bottom: 20px;
+        margin-bottom: 2rem;
         /*margin-left: 5px;
         margin-left: 0.5rem;*/
         padding-left:10px;
         padding-left:1rem;
+        @media only screen and (min-width:650px) {
+            text-align:center;
+        }
         @media only screen and (min-width:599px) and (max-width: 799px) {
             font-size: 19px;
             font-size: 1.9rem;
         }
-        @media only screen and (min-width:800px) {
+        @media only screen and (min-width:800px) and (max-width: 899px) {
             font-size: 20px;
             font-size: 2.0rem;
+        }
+        @media only screen and (min-width:900px) {
+            font-size: 22px;
+            font-size: 2.2rem;
         }
 
     }
@@ -416,11 +423,26 @@ header {
     h2 {
         padding-top:30px;
         padding-top:3rem;
-        padding-bottom:10px;
-        padding-bottom:1rem;
+        padding-bottom:20px;
+        padding-bottom:2rem;
         padding-left:10px;
         padding-left:1rem;
+        @media only screen and (min-width:650px) {
+            text-align:center;
         }
+        @media only screen and (min-width:599px) and (max-width: 799px) {
+            font-size: 19px;
+            font-size: 1.9rem;
+        }
+        @media only screen and (min-width:800px) and (max-width: 899px) {
+            font-size: 20px;
+            font-size: 2.0rem;
+        }
+        @media only screen and (min-width:900px) {
+            font-size: 22px;
+            font-size: 2.2rem;
+        }
+    }
     .restaurant1 {
         width:90%;
         /*margin-left:4%;*/
@@ -428,8 +450,17 @@ header {
         display:flex;
         flex-direction:column;
         justify-content:center;
+        @media only screen and (min-width:650px) {
+            flex-direction:row;
+            justify-content:space-around;
+            align-content:space-around;
+            flex-wrap:wrap;
+        }
         /*align-items:center;*/
         .carterest {
+            @media only screen and (min-width:650px) {
+                flex-basis:45%;
+            }
             background:white;
             border-radius:10px;
             border-radius:1rem;
@@ -455,7 +486,25 @@ header {
                         height:200px;
                         height:20rem;
                     } 
-                    @media only screen and (min-width:650px) and (max-width: 849px) {
+
+                    @media only screen and (min-width:650px) and (max-width: 749px) {
+                        height:150px;
+                        height:15rem;
+                    } 
+                    @media only screen and (min-width:750px) and (max-width: 849px) {
+                        height:180px;
+                        height:18rem;
+                    } 
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:180px;
+                        height:18rem;
+                    } 
+                    @media only screen and (min-width:1050px) {
+                        height:220px;
+                        height:22rem;
+                    } 
+
+                    /*@media only screen and (min-width:650px) and (max-width: 849px) {
                         height:220px;
                         height:22rem;
                     }
@@ -478,7 +527,7 @@ header {
                     @media only screen and (min-width:1600px) {
                         height:400px;
                         height:40rem;
-                    }                             
+                    } */                            
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -515,7 +564,25 @@ header {
                         height:200px;
                         height:20rem;
                     }
-                    @media only screen and (min-width:650px) and (max-width: 849px) {
+
+                    @media only screen and (min-width:650px) and (max-width: 749px) {
+                        height:150px;
+                        height:15rem;
+                    } 
+                    @media only screen and (min-width:750px) and (max-width: 849px) {
+                        height:180px;
+                        height:18rem;
+                    } 
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:180px;
+                        height:18rem;
+                    } 
+                    @media only screen and (min-width:1050px) {
+                        height:220px;
+                        height:22rem;
+                    } 
+                    
+                    /*@media only screen and (min-width:650px) and (max-width: 849px) {
                         height:220px;
                         height:22rem;
                     }
@@ -538,7 +605,7 @@ header {
                     @media only screen and (min-width:1600px) {
                         height:400px;
                         height:40rem;
-                    }                                       
+                    } */                                      
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -562,7 +629,25 @@ header {
                         height:200px;
                         height:20rem;
                     }
-                    @media only screen and (min-width:650px) and (max-width: 849px) {
+                    
+                    @media only screen and (min-width:650px) and (max-width: 749px) {
+                        height:150px;
+                        height:15rem;
+                    } 
+                    @media only screen and (min-width:750px) and (max-width: 849px) {
+                        height:180px;
+                        height:18rem;
+                    } 
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:180px;
+                        height:18rem;
+                    } 
+                    @media only screen and (min-width:1050px) {
+                        height:220px;
+                        height:22rem;
+                    } 
+
+                    /*@media only screen and (min-width:650px) and (max-width: 849px) {
                         height:220px;
                         height:22rem;
                     }
@@ -585,7 +670,7 @@ header {
                     @media only screen and (min-width:1600px) {
                         height:400px;
                         height:40rem;
-                    }                                    
+                    }   */                                 
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -609,7 +694,25 @@ header {
                         height:200px;
                         height:20rem;
                     }
-                    @media only screen and (min-width:650px) and (max-width: 849px) {
+                    
+                    @media only screen and (min-width:650px) and (max-width: 749px) {
+                        height:150px;
+                        height:15rem;
+                    } 
+                    @media only screen and (min-width:750px) and (max-width: 849px) {
+                        height:180px;
+                        height:18rem;
+                    } 
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:180px;
+                        height:18rem;
+                    } 
+                    @media only screen and (min-width:1050px) {
+                        height:220px;
+                        height:22rem;
+                    } 
+
+                    /*@media only screen and (min-width:650px) and (max-width: 849px) {
                         height:220px;
                         height:22rem;
                     }
@@ -632,7 +735,7 @@ header {
                     @media only screen and (min-width:1600px) {
                         height:400px;
                         height:40rem;
-                    }                                      
+                    }  */                                    
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
