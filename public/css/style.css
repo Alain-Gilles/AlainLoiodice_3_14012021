@@ -99,7 +99,7 @@ body {
     @include btn
 }*/
 /* animations */
-.pageprincipale {
+.page_principale {
   /*animation: pageweb 0ms 3000ms both;*/
   animation: pageweb 0ms 3000ms both;
   /*animation-name: pageweb;
@@ -115,7 +115,7 @@ body {
   background-color: white;
 }
 @media only screen and (min-width: 1270px) {
-  .pageprincipale {
+  .page_principale {
     width: 90%;
   }
 }
@@ -325,7 +325,7 @@ header {
   /* pour les autres pages il suffira de supprimer de code */
   /* pour activer le lien et voir apparaitre la fleche */
   /**/
-  /*a.affichefleche {
+  /*a.affiche_fleche {
       display:none;
   }*/
 }
@@ -335,7 +335,7 @@ header a {
   top: 0.8rem;
   color: black;
 }
-header .entetelogo {
+header .entete_logo {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -353,11 +353,11 @@ header .entetelogo {
   padding-bottom: 20px;
   padding-bottom: 2rem;
 }
-.hautpage .rechercheform {
+.hautpage .recherche_form {
   width: 100%;
   background-color: #e5e5e5;
 }
-.hautpage .rechercheform .rechercher {
+.hautpage .recherche_form .rechercher {
   padding-top: 10px;
   padding-top: 1rem;
   padding-bottom: 10px;
@@ -366,14 +366,14 @@ header .entetelogo {
   /* icone  marqueur de lieu */
   /* zone input recherche ville */
 }
-.hautpage .rechercheform .rechercher .fa-map-marker-alt {
+.hautpage .recherche_form .rechercher .fa-map-marker-alt {
   color: #4d4d4d;
   font-weight: bold;
   font-size: 15px;
   font-size: 1.5rem;
   margin-right: 0px;
 }
-.hautpage .rechercheform .rechercher input[name="rechercheville"] {
+.hautpage .recherche_form .rechercher input[name="rechercheville"] {
   color: #4d4d4d;
   font-weight: bold;
   font-size: 15px;
@@ -403,7 +403,7 @@ header .entetelogo {
 .presentation .soustitre p {
   text-align: center;
 }
-.presentation .btnexplorer {
+.presentation .btn_explorer {
   text-align: center;
   margin-bottom: 20px;
   margin-bottom: 2rem;
@@ -429,7 +429,7 @@ header .entetelogo {
   }
   }*/
 }
-.presentation .btnexplorer .btn {
+.presentation .btn_explorer .btn {
   padding: 1rem 2rem;
   border: 1px solid #b3b3b3;
   border: 0.1rem solid #b3b3b3;
@@ -442,7 +442,7 @@ header .entetelogo {
   cursor: pointer;
   outline: unset;
 }
-.presentation .btnexplorer .btn:hover {
+.presentation .btn_explorer .btn:hover {
   background: linear-gradient(to bottom, #ff93e1 10%, #ae80e5 90%);
   outline: unset;
   box-shadow: 3px 3px 10px #b3b3b3;
@@ -483,14 +483,14 @@ header .entetelogo {
   }
 }
 
-/** btnfonct **/
-.btnfonct {
+/** btn_fonct **/
+.btn_fonct {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.btnfonct .btnfonctchiffre {
+.btn_fonct .btn_fonct_chiffre {
   font-size: 11px;
   font-size: 1.1rem;
   width: 25px;
@@ -515,108 +515,108 @@ header .entetelogo {
   */
 }
 @media only screen and (min-width: 400px) and (max-width: 449px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 20px;
     left: 2.0rem;
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 499px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 25px;
     left: 2.5rem;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 599px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 30px;
     left: 3rem;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 649px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 33px;
     left: 3.3rem;
   }
 }
 @media only screen and (min-width: 650px) and (max-width: 749px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 40px;
     left: 4rem;
   }
 }
 @media only screen and (min-width: 750px) and (max-width: 829px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 45px;
     left: 4.5rem;
   }
 }
 @media only screen and (min-width: 830px) and (max-width: 899px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 50px;
     left: 5rem;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 949px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 55px;
     left: 5.5rem;
   }
 }
 @media only screen and (min-width: 950px) and (max-width: 999px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 60px;
     left: 6rem;
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1099px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 70px;
     left: 7rem;
   }
 }
 @media only screen and (min-width: 1100px) and (max-width: 1199px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 75px;
     left: 7.5rem;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1269px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 80px;
     left: 8rem;
   }
 }
 @media only screen and (min-width: 1270px) and (max-width: 1339px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 65px;
     left: 6.5rem;
   }
 }
 @media only screen and (min-width: 1340px) and (max-width: 1399px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 70px;
     left: 7rem;
   }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1499px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 75px;
     left: 7.5rem;
   }
 }
 @media only screen and (min-width: 1500px) and (max-width: 1599px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 80px;
     left: 8rem;
   }
 }
 @media only screen and (min-width: 1599px) {
-  .btnfonct .btnfonctchiffre {
+  .btn_fonct .btn_fonct_chiffre {
     left: 80px;
     left: 8rem;
   }
 }
-.btnfonct .btnfoncttheme {
+.btn_fonct .btn_fonct_theme {
   width: 85%;
   font-size: 14px;
   font-size: 1.4rem;
@@ -673,124 +673,124 @@ header .entetelogo {
   }*/
 }
 @media only screen and (max-width: 329px) {
-  .btnfonct .btnfoncttheme .btnopt {
+  .btn_fonct .btn_fonct_theme .btnopt {
     margin-left: 5%;
   }
 }
 @media only screen and (min-width: 330px) and (max-width: 399px) {
-  .btnfonct .btnfoncttheme .btnopt {
+  .btn_fonct .btn_fonct_theme .btnopt {
     margin-left: 10%;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 499px) {
-  .btnfonct .btnfoncttheme .btnopt {
+  .btn_fonct .btn_fonct_theme .btnopt {
     margin-left: 15%;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 599px) {
-  .btnfonct .btnfoncttheme .btnopt {
+  .btn_fonct .btn_fonct_theme .btnopt {
     margin-left: 20%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 699px) {
-  .btnfonct .btnfoncttheme .btnopt {
+  .btn_fonct .btn_fonct_theme .btnopt {
     margin-left: 20%;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 799px) {
-  .btnfonct .btnfoncttheme .btnopt {
+  .btn_fonct .btn_fonct_theme .btnopt {
     margin-left: 22%;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 999px) {
-  .btnfonct .btnfoncttheme .btnopt {
+  .btn_fonct .btn_fonct_theme .btnopt {
     margin-left: 25%;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .btnfonct .btnfoncttheme .btnopt {
+  .btn_fonct .btn_fonct_theme .btnopt {
     margin-left: 30%;
   }
 }
 @media only screen and (min-width: 599px) and (max-width: 799px) {
-  .btnfonct .btnfoncttheme {
+  .btn_fonct .btn_fonct_theme {
     font-size: 15px;
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 800px) {
-  .btnfonct .btnfoncttheme {
+  .btn_fonct .btn_fonct_theme {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
-.btnfonct .btnfoncttheme:hover {
+.btn_fonct .btn_fonct_theme:hover {
   outline: unset;
   background: #e4d5f6;
 }
-.btnfonct .btnfoncttheme:hover .fa-mobile-alt {
+.btn_fonct .btn_fonct_theme:hover .fa-mobile-alt {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:hover .fa-list-ul {
+.btn_fonct .btn_fonct_theme:hover .fa-list-ul {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:hover .fa-store {
+.btn_fonct .btn_fonct_theme:hover .fa-store {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:active {
+.btn_fonct .btn_fonct_theme:active {
   outline: unset;
   background: #e4d5f6;
 }
-.btnfonct .btnfoncttheme:active .fa-mobile-alt {
+.btn_fonct .btn_fonct_theme:active .fa-mobile-alt {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:active .fa-list-ul {
+.btn_fonct .btn_fonct_theme:active .fa-list-ul {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:active .fa-store {
+.btn_fonct .btn_fonct_theme:active .fa-store {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+.btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
   margin-right: 0px;
   /*padding-left:10px;*/
 }
 @media only screen and (max-width: 329px) {
-  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
     padding-left: 10px;
   }
 }
 @media only screen and (min-width: 330px) and (max-width: 399px) {
-  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
     padding-left: 15px;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 499px) {
-  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
     padding-left: 30px;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 599px) {
-  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
     padding-left: 35px;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 699px) {
-  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
     padding-left: 40px;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 799px) {
-  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
     padding-left: 50px;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 899px) {
-  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
     padding-left: 60px;
   }
 }
 @media only screen and (min-width: 900px) {
-  .btnfonct .btnfoncttheme .fa-mobile-alt::before, .btnfonct .btnfoncttheme .fa-list-ul::before, .btnfonct .btnfoncttheme .fa-store::before {
+  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
     padding-left: 70px;
   }
 }
@@ -1233,7 +1233,7 @@ header .entetelogo {
 footer {
   background: #4d4d4d;
 }
-footer .menufooter p {
+footer .menu_footer p {
   color: white;
   padding-top: 10px;
   padding-top: 1rem;
@@ -1242,18 +1242,18 @@ footer .menufooter p {
   font-family: 'Shrikhand', sans-serif;
 }
 @media only screen and (min-width: 320px) and (max-width: 399px) {
-  footer .menufooter p {
+  footer .menu_footer p {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
 @media only screen and (min-width: 400px) {
-  footer .menufooter p {
+  footer .menu_footer p {
     font-size: 20px;
     font-size: 2rem;
   }
 }
-footer .menufooter ul {
+footer .menu_footer ul {
   padding-left: 10px;
   padding-left: 1rem;
   padding-top: 10px;
@@ -1262,7 +1262,7 @@ footer .menufooter ul {
   padding-bottom: 1rem;
   list-style-type: none;
 }
-footer .menufooter ul li a {
+footer .menu_footer ul li a {
   text-decoration: none;
   color: white;
   font-size: 10px;
@@ -1270,63 +1270,63 @@ footer .menufooter ul li a {
   line-height: 1.8;
 }
 @media only screen and (min-width: 320px) and (max-width: 399px) {
-  footer .menufooter ul li a {
+  footer .menu_footer ul li a {
     font-size: 12px;
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 799px) {
-  footer .menufooter ul li a {
+  footer .menu_footer ul li a {
     font-size: 14px;
     font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 800px) {
-  footer .menufooter ul li a {
+  footer .menu_footer ul li a {
     font-size: 15px;
     font-size: 1.5rem;
   }
 }
-footer .menufooter ul li .fa-utensils::before {
+footer .menu_footer ul li .fa-utensils::before {
   margin-right: 10px;
   margin-right: 1rem;
 }
 @media only screen and (min-width: 320px) and (max-width: 399px) {
-  footer .menufooter ul li .fa-utensils::before {
+  footer .menu_footer ul li .fa-utensils::before {
     font-size: 12px;
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 799px) {
-  footer .menufooter ul li .fa-utensils::before {
+  footer .menu_footer ul li .fa-utensils::before {
     font-size: 14px;
     font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 800px) {
-  footer .menufooter ul li .fa-utensils::before {
+  footer .menu_footer ul li .fa-utensils::before {
     font-size: 15px;
     font-size: 1.5rem;
   }
 }
-footer .menufooter ul li .fa-hands-helping::before {
+footer .menu_footer ul li .fa-hands-helping::before {
   margin-right: 10px;
   margin-right: 1rem;
 }
 @media only screen and (min-width: 320px) and (max-width: 399px) {
-  footer .menufooter ul li .fa-hands-helping::before {
+  footer .menu_footer ul li .fa-hands-helping::before {
     font-size: 12px;
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 799px) {
-  footer .menufooter ul li .fa-hands-helping::before {
+  footer .menu_footer ul li .fa-hands-helping::before {
     font-size: 14px;
     font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 800px) {
-  footer .menufooter ul li .fa-hands-helping::before {
+  footer .menu_footer ul li .fa-hands-helping::before {
     font-size: 15px;
     font-size: 1.5rem;
   }
@@ -1345,18 +1345,18 @@ footer .menufooter ul li .fa-hands-helping::before {
 /** page carte restaurant la palette du gout  **/
 /**                                          **/
 /**                                          **/
-.corpsresto {
+.corps_resto {
   width: 100%;
   background: #f2f2f2;
 }
-.corpsresto .btnexplorercarte {
+.corps_resto .btn_explorer_carte {
   text-align: center;
   margin-bottom: 20px;
   margin-bottom: 2rem;
   /**/
   margin-bottom: 50px;
 }
-.corpsresto .btnexplorercarte .btn {
+.corps_resto .btn_explorer_carte .btn {
   padding: 1rem 2rem;
   border: 1px solid #b3b3b3;
   border: 0.1rem solid #b3b3b3;
@@ -1369,18 +1369,18 @@ footer .menufooter ul li .fa-hands-helping::before {
   cursor: pointer;
   outline: unset;
 }
-.corpsresto .btnexplorercarte .btn:hover {
+.corps_resto .btn_explorer_carte .btn:hover {
   background: linear-gradient(to bottom, #ff93e1 10%, #ae80e5 90%);
   outline: unset;
   box-shadow: 3px 3px 10px #b3b3b3;
   box-shadow: 0.3rem 0.3rem 1rem #b3b3b3;
 }
-.corpsresto .ajustcolor {
+.corps_resto .ajust_color {
   margin-bottom: 0;
   height: 0.1px;
 }
 
-a.affichefleche {
+a.affiche_fleche {
   position: absolute;
   top: 10px;
   top: 1rem;
@@ -1388,8 +1388,8 @@ a.affichefleche {
   left: 3rem;
 }
 
-/*.carteimgpalette {*/
-.carteimgrestaurant {
+/*.carte_img_palette {*/
+.carte_img_restaurant {
   width: 100%;
   height: 160px;
   height: 16rem;
@@ -1402,55 +1402,55 @@ a.affichefleche {
   background-position: center;
 }
 @media only screen and (min-width: 601px) and (max-width: 799px) {
-  .carteimgrestaurant {
+  .carte_img_restaurant {
     height: 200px;
     height: 20rem;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 899px) {
-  .carteimgrestaurant {
+  .carte_img_restaurant {
     height: 220px;
     height: 22rem;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1099px) {
-  .carteimgrestaurant {
+  .carte_img_restaurant {
     height: 240px;
     height: 24rem;
   }
 }
 @media only screen and (min-width: 1100px) and (max-width: 1299px) {
-  .carteimgrestaurant {
+  .carte_img_restaurant {
     height: 260px;
     height: 26rem;
   }
 }
 @media only screen and (min-width: 1300px) and (max-width: 1499px) {
-  .carteimgrestaurant {
+  .carte_img_restaurant {
     height: 280px;
     height: 28rem;
   }
 }
 @media only screen and (min-width: 1500px) {
-  .carteimgrestaurant {
+  .carte_img_restaurant {
     height: 300px;
     height: 30rem;
   }
 }
-.carteimgrestaurant.carteimgpalette {
+.carte_img_restaurant.carte_img_palette {
   background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
-.carteimgrestaurant.cartelanote {
+.carte_img_restaurant.carte_lanote {
   background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
-.carteimgrestaurant.cartelafrancaise {
+.carte_img_restaurant.carte_la_francaise {
   background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
-.carteimgrestaurant.cartedelicesens {
+.carte_img_restaurant.carte_delice_sens {
   background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
-.cartemenu {
+.carte_menu {
   width: 100%;
   background: #f2f2f2;
   border-top-left-radius: 30px;
@@ -1459,24 +1459,24 @@ a.affichefleche {
   border-top-right-radius: 3rem;
   position: relative;
   top: -20px;
-  /*envelopthemeplat*/
+  /*envelop_theme_plat*/
 }
-.cartemenu .nomrestaurant {
+.carte_menu .nom_restaurant {
   padding-top: 15px;
   padding-top: 1.5rem;
   margin-left: 5%;
 }
-.cartemenu .nomrestaurant h1 {
+.carte_menu .nom_restaurant h1 {
   font-family: 'Shrikhand','Trebuchet MS', Arial, sans-serif;
   font-weight: 500;
   /*text-align:center;*/
   position: relative;
   /*left:5%;*/
 }
-.cartemenu .nomrestaurant h1::first-letter {
+.carte_menu .nom_restaurant h1::first-letter {
   text-transform: capitalize;
 }
-.cartemenu .nomrestaurant .fa-heart::before {
+.carte_menu .nom_restaurant .fa-heart::before {
   margin-left: 30px;
   margin-left: 3rem;
   position: absolute;
@@ -1484,11 +1484,11 @@ a.affichefleche {
   top: 2rem;
   right: 10%;
 }
-.cartemenu .nomrestaurant .fa-heart {
+.carte_menu .nom_restaurant .fa-heart {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-.cartemenu .nomrestaurant .fa-heart:hover {
+.carte_menu .nom_restaurant .fa-heart:hover {
   color: #9356DC;
   text-shadow: -1px 0 #9356DC, 0 1px #9356DC, 1px 0 #9356DC, 0 -1px #9356DC;
   animation-name: remplissagecoeur;
@@ -1496,24 +1496,24 @@ a.affichefleche {
   animation-timing-function: ease-in;
   animation-fill-mode: both;
 }
-.cartemenu .envelopthemeplat {
+.carte_menu .envelop_theme_plat {
   /** ajout overflow **/
   overflow: hidden;
   /**               **/
   position: relative;
   padding-bottom: 20px;
   padding-bottom: 2rem;
-  /*cartethemeplat*/
+  /*carte_theme_plat*/
 }
-.cartemenu .envelopthemeplat .cartethemeplat {
+.carte_menu .envelop_theme_plat .carte_theme_plat {
   margin-left: 5%;
-  /*envelopcartethemeplatcontenu*/
-  /*envelopcartethemeplatcontenu:hover*/
+  /*envelop_carte_theme_plat_contenu*/
+  /*envelop_carte_theme_plat_contenu:hover*/
 }
-.cartemenu .envelopthemeplat .cartethemeplat .titrecarte {
+.carte_menu .envelop_theme_plat .carte_theme_plat .titre_carte {
   text-transform: uppercase;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .soulignement {
+.carte_menu .envelop_theme_plat .carte_theme_plat .soulignement {
   width: 10%;
   height: 3px;
   height: 0.3rem;
@@ -1521,7 +1521,7 @@ a.affichefleche {
   margin-bottom: 10px;
   margin-bottom: 1rem;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu {
   position: relative;
   margin-bottom: 10px;
   margin-bottom: 1rem;
@@ -1529,15 +1529,15 @@ a.affichefleche {
   /*@include apparition(apparitionc1,1000ms,ease-in,forward,10ms);*/
   /**/
   /*a {*/
-  /*a remplace par liencartethemeplatcontenu*/
+  /*a remplace par lien_carte_theme_plat_contenu*/
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu {
   cursor: pointer;
   text-decoration: none;
   color: black;
   /*position:relative;*/
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu {
   background: white;
   width: 94%;
   height: 60px;
@@ -1545,7 +1545,7 @@ a.affichefleche {
   border-radius: 1rem;
   box-shadow: 2px 2px 6px grey;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat {
   margin-left: 4%;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -1553,44 +1553,44 @@ a.affichefleche {
   padding-bottom: 0.5rem;
   position: relative;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat1p {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat1p {
   font-weight: bold;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat1p::first-letter {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat1p::first-letter {
   text-transform: capitalize;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p {
   text-overflow: ellipsis;
   /*width: 40px;*/
   overflow: hidden;
   white-space: nowrap;
 }
 @media only screen and (max-width: 319px) {
-  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p {
+  .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p {
     width: 180px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 360px) {
-  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p {
+  .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p {
     width: 200px;
   }
 }
 @media only screen and (min-width: 361px) and (max-width: 400px) {
-  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p {
+  .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p {
     width: 240px;
   }
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .plat2p::first-letter {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p::first-letter {
   text-transform: capitalize;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatcontenu .plat .tarif {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .tarif {
   position: absolute;
   bottom: 5px;
   right: 15px;
   bottom: 0.5rem;
   right: 1.5rem;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatselect {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_select {
   width: 50px;
   width: 5rem;
   height: 60px;
@@ -1602,7 +1602,7 @@ a.affichefleche {
   top: 0px;
   right: -500px;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu .liencartethemeplatcontenu .cartethemeplatselect p {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_select p {
   text-align: center;
   padding-top: 30%;
   color: white;
@@ -1610,36 +1610,36 @@ a.affichefleche {
   font-size: 2.4rem;
   font-weight: bold;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatcontenu .plat2p {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_contenu .plat2p {
   /* largeur du texte à partir duquel apparait  ... en overflow */
   /*width:200px;
   width:20rem;*/
 }
 @media only screen and (min-width: 320px) and (max-width: 400px) {
-  .cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatcontenu .plat2p {
+  .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_contenu .plat2p {
     width: 200px !important;
     width: 20rem !important;
   }
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatcontenu .plat .tarif {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_contenu .plat .tarif {
   right: 55px;
   right: 5.5rem;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatselect {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_select {
   animation-name: deplacement;
   animation-duration: 0.4s;
   animation-timing-function: ease-in;
   animation-fill-mode: both;
 }
-.cartemenu .envelopthemeplat .cartethemeplat .envelopcartethemeplatcontenu:hover .cartethemeplatselect .fa-check-circle {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_select .fa-check-circle {
   animation-name: rotationicone;
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-fill-mode: both;
 }
 
-/*cartemenu*/
-.animcarte1 {
+/*carte_menu*/
+.anim_carte1 {
   animation-name: apparitionc1;
   animation-duration: 1000ms;
   animation-timing-function: ease-in;

@@ -109,10 +109,10 @@ header a {
   top: 0.8rem;
   color: black;
 }
-header a.affichefleche {
+header a.affiche_fleche {
   display: none;
 }
-header .entetelogo {
+header .entete_logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,11 +139,11 @@ header .entetelogo {
   padding-bottom: 20px;
   padding-bottom: 2rem;
 }
-.hautpage .rechercheform {
+.hautpage .recherche_form {
   width: 100%;
   background-color: #e5e5e5;
 }
-.hautpage .rechercheform .rechercher {
+.hautpage .recherche_form .rechercher {
   padding-top: 10px;
   padding-top: 1rem;
   padding-bottom: 10px;
@@ -152,14 +152,14 @@ header .entetelogo {
   /* icone  marqueur de lieu */
   /* zone input recherche ville */
 }
-.hautpage .rechercheform .rechercher .fa-map-marker-alt {
+.hautpage .recherche_form .rechercher .fa-map-marker-alt {
   color: #4d4d4d;
   font-weight: bold;
   font-size: 15px;
   font-size: 1.5rem;
   margin-right: 0px;
 }
-.hautpage .rechercheform .rechercher input[name="rechercheville"] {
+.hautpage .recherche_form .rechercher input[name="rechercheville"] {
   color: #4d4d4d;
   font-weight: bold;
   font-size: 15px;
@@ -187,7 +187,7 @@ header .entetelogo {
 .presentation .soustitre p {
   text-align: center;
 }
-.presentation .btnexplorer {
+.presentation .btn_explorer {
   text-align: center;
   margin-bottom: 20px;
   margin-bottom: 2rem;
@@ -202,8 +202,8 @@ header .entetelogo {
   margin-left: 0.5rem;
 }
 
-/** btnfonct **/
-.btnfonct {
+/** btn_fonct **/
+.btn_fonct {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,7 +216,7 @@ header .entetelogo {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.btnfonct .btnfonctchiffre {
+.btn_fonct .btn_fonct_chiffre {
   font-size: 11px;
   font-size: 1.1rem;
   width: 25px;
@@ -236,7 +236,7 @@ header .entetelogo {
   left: 15px;
   left: 1.5rem;
 }
-.btnfonct .btnfoncttheme {
+.btn_fonct .btn_fonct_theme {
   width: 85%;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
@@ -269,39 +269,39 @@ header .entetelogo {
       }
   }*/
 }
-.btnfonct .btnfoncttheme:hover {
+.btn_fonct .btn_fonct_theme:hover {
   background: #e4d5f6;
 }
-.btnfonct .btnfoncttheme:hover .fa-mobile-alt {
+.btn_fonct .btn_fonct_theme:hover .fa-mobile-alt {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:hover .fa-list-ul {
+.btn_fonct .btn_fonct_theme:hover .fa-list-ul {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:hover .fa-store {
+.btn_fonct .btn_fonct_theme:hover .fa-store {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:active {
+.btn_fonct .btn_fonct_theme:active {
   background: #e4d5f6;
 }
-.btnfonct .btnfoncttheme:active .fa-mobile-alt {
+.btn_fonct .btn_fonct_theme:active .fa-mobile-alt {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:active .fa-list-ul {
+.btn_fonct .btn_fonct_theme:active .fa-list-ul {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme:active .fa-store {
+.btn_fonct .btn_fonct_theme:active .fa-store {
   color: #6023a9;
 }
-.btnfonct .btnfoncttheme .fa-mobile-alt::before {
+.btn_fonct .btn_fonct_theme .fa-mobile-alt::before {
   margin-right: 18px;
   margin-right: 1.8rem;
 }
-.btnfonct .btnfoncttheme .fa-list-ul::before {
+.btn_fonct .btn_fonct_theme .fa-list-ul::before {
   margin-right: 18px;
   margin-right: 1.8rem;
 }
-.btnfonct .btnfoncttheme .fa-store::before {
+.btn_fonct .btn_fonct_theme .fa-store::before {
   margin-right: 18px;
   margin-right: 1.8rem;
 }
@@ -476,14 +476,14 @@ header .entetelogo {
 footer {
   background: #4d4d4d;
 }
-footer .menufooter h4 {
+footer .menu_footer h4 {
   color: white;
   padding-top: 10px;
   padding-top: 1rem;
   padding-left: 10px;
   padding-left: 1rem;
 }
-footer .menufooter ul {
+footer .menu_footer ul {
   padding-left: 10px;
   padding-left: 1rem;
   padding-top: 10px;
@@ -492,17 +492,17 @@ footer .menufooter ul {
   padding-bottom: 1rem;
   list-style-type: none;
 }
-footer .menufooter ul li a {
+footer .menu_footer ul li a {
   text-decoration: none;
   color: white;
   font-size: 10px;
   font-size: 1.0rem;
 }
-footer .menufooter ul li .fa-utensils::before {
+footer .menu_footer ul li .fa-utensils::before {
   margin-right: 10px;
   margin-right: 1rem;
 }
-footer .menufooter ul li .fa-hands-helping::before {
+footer .menu_footer ul li .fa-hands-helping::before {
   margin-right: 10px;
   margin-right: 1rem;
 }

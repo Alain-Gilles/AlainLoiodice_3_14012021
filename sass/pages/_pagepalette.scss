@@ -1,20 +1,20 @@
 /** page carte restaurant la palette du gout  **/
 /**                                          **/
 /**                                          **/
-.corpsresto {
+.corps_resto {
     width :100%;
     background: lighten($colour-fondgris,$pourcentage-fondlighten);
-    .btnexplorercarte {
+    .btn_explorer_carte {
         @include boutonsindexcarte;
         margin-bottom:50px;
     }
-    .ajustcolor {
+    .ajust_color {
         margin-bottom:0;
         height:0.1px;
     }
 }
 
-a.affichefleche {
+a.affiche_fleche {
     position:absolute;
     top:10px;
     top:1rem;
@@ -22,8 +22,8 @@ a.affichefleche {
     left:3rem;
 }
 
-/*.carteimgpalette {*/
-.carteimgrestaurant {    
+/*.carte_img_palette {*/
+.carte_img_restaurant {    
     width:100%;
     height:160px;
     height:16rem;
@@ -55,17 +55,17 @@ a.affichefleche {
 
     margin-top:10px;
     margin-top:1rem;
-    
-    &.carteimgpalette {
+
+    &.carte_img_palette {
         background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     }
-    &.cartelanote {
+    &.carte_lanote {
         background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     }
-    &.cartelafrancaise {
+    &.carte_la_francaise {
         background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     }
-    &.cartedelicesens {
+    &.carte_delice_sens {
         background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     }
     background-repeat:no-repeat;
@@ -74,7 +74,7 @@ a.affichefleche {
     background-position: center;
 }
 
-.cartemenu {
+.carte_menu {
     width:100%;
     background: lighten($colour-fondgris,$pourcentage-fondlighten);
     border-top-left-radius:30px;
@@ -83,7 +83,7 @@ a.affichefleche {
     border-top-right-radius:3rem;
     position:relative;
     top:-20px;
-    .nomrestaurant {
+    .nom_restaurant {
         padding-top: 15px;
         padding-top: 1.5rem;
         margin-left:5%;
@@ -118,16 +118,16 @@ a.affichefleche {
             animation-fill-mode:both;   
         }
     }
-    .envelopthemeplat {
+    .envelop_theme_plat {
         /** ajout overflow **/
         overflow:hidden;
         /**               **/
         position:relative;
         padding-bottom:20px;
         padding-bottom:2rem;
-        .cartethemeplat {
+        .carte_theme_plat {
             margin-left:5%;
-            .titrecarte {
+            .titre_carte {
                 text-transform: uppercase;
             }
             .soulignement {
@@ -138,7 +138,7 @@ a.affichefleche {
                 margin-bottom:10px;
                 margin-bottom:1rem;
             }
-            .envelopcartethemeplatcontenu {
+            .envelop_carte_theme_plat_contenu {
                 position:relative;
                 margin-bottom:10px;
                 margin-bottom:1rem;
@@ -146,12 +146,12 @@ a.affichefleche {
                 /*@include apparition(apparitionc1,1000ms,ease-in,forward,10ms);*/
                 /**/
                 /*a {*/
-                .liencartethemeplatcontenu {
+                .lien_carte_theme_plat_contenu {
                     cursor: pointer;
                     text-decoration:none;
                     color:black;
                     /*position:relative;*/
-                    .cartethemeplatcontenu {
+                    .carte_theme_plat_contenu {
                         background:white;
                         width:94%;
                         height:60px;
@@ -198,7 +198,7 @@ a.affichefleche {
                             }
                         }
                     }
-                    .cartethemeplatselect {
+                    .carte_theme_plat_select {
                         width:50px;
                         width:5rem;
                         height:60px;
@@ -218,11 +218,11 @@ a.affichefleche {
                             font-weight:bold;
                         }
                     }
-                }/*a remplace par liencartethemeplatcontenu*/
-            } /*envelopcartethemeplatcontenu*/   
+                }/*a remplace par lien_carte_theme_plat_contenu*/
+            } /*envelop_carte_theme_plat_contenu*/   
 
-            .envelopcartethemeplatcontenu:hover {
-                .cartethemeplatcontenu {
+            .envelop_carte_theme_plat_contenu:hover {
+                .carte_theme_plat_contenu {
                     .plat2p {
                         /* largeur du texte à partir duquel apparait  ... en overflow */
                         /*width:200px;
@@ -239,7 +239,7 @@ a.affichefleche {
                             }
                     }
                 }
-                .cartethemeplatselect {
+                .carte_theme_plat_select {
                     animation-name:deplacement;
                     animation-duration:0.4s;
                     animation-timing-function:ease-in;
@@ -251,15 +251,15 @@ a.affichefleche {
                         animation-fill-mode:both;
                     }
                 }
-            }/*envelopcartethemeplatcontenu:hover*/                                              
-        } /*cartethemeplat*/
+            }/*envelop_carte_theme_plat_contenu:hover*/                                              
+        } /*carte_theme_plat*/
 
-    } /*envelopthemeplat*/
-} /*cartemenu*/
+    } /*envelop_theme_plat*/
+} /*carte_menu*/
 
 
 
-.animcarte1 {
+.anim_carte1 {
     @include apparition(apparitionc1,1000ms,ease-in,forward,0ms);
 }
 

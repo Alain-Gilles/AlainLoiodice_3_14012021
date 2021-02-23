@@ -14,10 +14,10 @@ header {
     /* pour les autres pages il suffira de supprimer de code */
     /* pour activer le lien et voir apparaitre la fleche */
     /**/
-    /*a.affichefleche {
+    /*a.affiche_fleche {
         display:none;
     }*/
-    .entetelogo {
+    .entete_logo {
         display:flex;
         flex-direction:row;
         align-items:center;
@@ -36,7 +36,7 @@ header {
     margin-top:1.5rem;
     padding-bottom:20px;
     padding-bottom:2rem;
-    .rechercheform {
+    .recherche_form {
         width:100%;
         background-color: darken($colour-fondgris,$pourcentage-fonddarken);
         .rechercher {
@@ -95,7 +95,7 @@ header {
         }
     }
 
-    .btnexplorer {
+    .btn_explorer {
         @include boutonsindexcarte;
         /*text-align:center;
         margin-bottom:20px;
@@ -148,14 +148,14 @@ header {
     }
 }
 
-/** btnfonct **/
+/** btn_fonct **/
 
-.btnfonct {
+.btn_fonct {
     position:relative;
     display: flex;
     flex-direction: row;
     justify-content:center;
-    .btnfonctchiffre {
+    .btn_fonct_chiffre {
         font-size: 11px;
         font-size: 1.1rem;
         width:25px;
@@ -247,7 +247,7 @@ header {
             left:8rem;
         }                                                    
     }
-    .btnfoncttheme {
+    .btn_fonct_theme {
         width:85%;
         font-size: 14px;
         font-size: 1.4rem;
@@ -801,7 +801,7 @@ header {
 
 footer {
     background: darken(grey,20); 
-    .menufooter {
+    .menu_footer {
         p {
             color:white;
             padding-top:10px;
