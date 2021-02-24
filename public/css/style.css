@@ -1646,14 +1646,14 @@ a.affiche_fleche {
   animation-delay: 0ms;
 }
 
-.animcarte2 {
+.anim_carte2 {
   animation-name: apparitionc1;
   animation-duration: 2000ms;
   animation-timing-function: ease-in;
   animation-delay: 0ms;
 }
 
-.animcarte3 {
+.anim_carte3 {
   animation-name: apparitionc1;
   animation-duration: 3000ms;
   animation-timing-function: ease-in;

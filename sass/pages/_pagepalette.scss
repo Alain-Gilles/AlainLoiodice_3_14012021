@@ -263,11 +263,11 @@ a.affiche_fleche {
     @include apparition(apparitionc1,1000ms,ease-in,forward,0ms);
 }
 
-.animcarte2 {
+.anim_carte2 {
     @include apparition(apparitionc1,2000ms,ease-in,forward,0ms);
 }
 
-.animcarte3 {
+.anim_carte3 {
     @include apparition(apparitionc1,3000ms,ease-in,forward,0ms);
 }
 
