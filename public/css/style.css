@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*@mixin btn ($colourprimary:$colour-primary,$coloursecondary:$colour-secondary,$pourcentagesecond:10%,$pourcentageprimary:90%,$pourcentagelighten:10) {
     padding: $btn-paddingv $btn-paddingh;
     @include border;
@@ -319,15 +318,6 @@ body {
 /** header **/
 header {
   position: relative;
-  /**/
-  /* la fleche qui sert de retour sur page index*/
-  /* n'est pas affichée sur page index */
-  /* pour les autres pages il suffira de supprimer de code */
-  /* pour activer le lien et voir apparaitre la fleche */
-  /**/
-  /*a.affiche_fleche {
-      display:none;
-  }*/
 }
 header a {
   position: absolute;
@@ -408,26 +398,6 @@ header .entete_logo {
   margin-bottom: 20px;
   margin-bottom: 2rem;
   /**/
-  /*text-align:center;
-  margin-bottom:20px;
-  margin-bottom:2rem;
-  .btn {
-  padding: $btn-paddingv $btn-paddingh;
-  @include border(lighten(grey,20),10rem);
-  color: $btn-color;
-  font-weight: bold;
-  background:linear-gradient(to bottom, lighten($colour-secondary,0) 10%, lighten($colour-primary,0) 90%);
-  box-shadow:1px 2px 5px lighten(grey,20);
-  box-shadow:0.1rem 0.2rem 0.5rem lighten(grey,20);
-  cursor: pointer;
-  outline: unset;
-  &:hover{
-  background:linear-gradient(to bottom, lighten($colour-secondary,5) 10%, lighten($colour-primary,10) 90%);
-  outline: unset;
-  box-shadow:3px 3px 10px lighten(grey,20);
-  box-shadow:0.3rem 0.3rem 1rem lighten(grey,20);
-  }
-  }*/
 }
 .presentation .btn_explorer .btn {
   padding: 1rem 2rem;
@@ -454,8 +424,6 @@ header .entete_logo {
   margin-top: 2rem;
   margin-bottom: 20px;
   margin-bottom: 2rem;
-  /*margin-left: 5px;
-  margin-left: 0.5rem;*/
   padding-left: 10px;
   padding-left: 1rem;
 }
@@ -489,6 +457,9 @@ header .entete_logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /**/
+  align-items: baseline;
+  /**/
 }
 .btn_fonct .btn_fonct_chiffre {
   font-size: 11px;
@@ -504,126 +475,17 @@ header .entete_logo {
   text-align: center;
   padding: 5px;
   padding: 0.5rem;
-  position: absolute;
-  bottom: 28px;
-  bottom: 2.8rem;
-  left: 15px;
-  left: 1.5rem;
-  /*
-  Attention sur wrapper definition d'un média queries avec pour min-width 1270px un width de 90%  
-  La marge n'est plus calculée à partir de wrapper = 100% mais de wrapper = 90% du body
-  */
-}
-@media only screen and (min-width: 400px) and (max-width: 449px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 20px;
-    left: 2.0rem;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 499px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 25px;
-    left: 2.5rem;
-  }
-}
-@media only screen and (min-width: 500px) and (max-width: 599px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 30px;
-    left: 3rem;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 649px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 33px;
-    left: 3.3rem;
-  }
-}
-@media only screen and (min-width: 650px) and (max-width: 749px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 40px;
-    left: 4rem;
-  }
-}
-@media only screen and (min-width: 750px) and (max-width: 829px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 45px;
-    left: 4.5rem;
-  }
-}
-@media only screen and (min-width: 830px) and (max-width: 899px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 50px;
-    left: 5rem;
-  }
-}
-@media only screen and (min-width: 900px) and (max-width: 949px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 55px;
-    left: 5.5rem;
-  }
-}
-@media only screen and (min-width: 950px) and (max-width: 999px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 60px;
-    left: 6rem;
-  }
-}
-@media only screen and (min-width: 1000px) and (max-width: 1099px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 70px;
-    left: 7rem;
-  }
-}
-@media only screen and (min-width: 1100px) and (max-width: 1199px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 75px;
-    left: 7.5rem;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1269px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 80px;
-    left: 8rem;
-  }
-}
-@media only screen and (min-width: 1270px) and (max-width: 1339px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 65px;
-    left: 6.5rem;
-  }
-}
-@media only screen and (min-width: 1340px) and (max-width: 1399px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 70px;
-    left: 7rem;
-  }
-}
-@media only screen and (min-width: 1400px) and (max-width: 1499px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 75px;
-    left: 7.5rem;
-  }
-}
-@media only screen and (min-width: 1500px) and (max-width: 1599px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 80px;
-    left: 8rem;
-  }
-}
-@media only screen and (min-width: 1599px) {
-  .btn_fonct .btn_fonct_chiffre {
-    left: 80px;
-    left: 8rem;
-  }
+  margin-right: -1.5%;
+  z-index: 1;
 }
 .btn_fonct .btn_fonct_theme {
   width: 85%;
   font-size: 14px;
   font-size: 1.4rem;
-  text-align: justify;
-  /*****************/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background: #EFEFEF;
-  /*****************/
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
   border: 1px solid #b3b3b3;
@@ -633,96 +495,13 @@ header .entete_logo {
   padding: 2rem 2.5rem;
   color: black;
   font-weight: 600;
-  /*   */
-  /*background:linear-gradient(to bottom, $colour-secondary 90, lighten($colour-primary,50) 10);*/
   box-shadow: 2px 2px 0px gray;
   box-shadow: 0.2rem 0.2rem 1rem gray;
   cursor: pointer;
   outline: unset;
-  /*&:focus{
-      outline: unset;
-      background: lighten($colour-primary,30);
-      .fa-mobile-alt {
-          color: darken($colour-primary,20)
-      }
-      .fa-list-ul {
-          color: darken($colour-primary,20)
-      }
-      
-      .fa-store {
-          color: darken($colour-primary,20)
-      }
-  }*/
-  /*.fa-mobile-alt::before {
-      margin-right:18px;
-      margin-right:1.8rem;
-      margin-right:0px;
-      padding-left:10px;
-  }
-  .fa-list-ul::before {
-      margin-right:18px;
-      margin-right:1.8rem;
-      margin-right:0px;
-      padding-left:10px;                  
-  }
-  .fa-store::before {
-      margin-right:18px;
-      margin-right:1.8rem;
-      margin-right:0px;
-      padding-left:10px;
-  }*/
 }
-@media only screen and (max-width: 329px) {
-  .btn_fonct .btn_fonct_theme .btnopt {
-    margin-left: 5%;
-  }
-}
-@media only screen and (min-width: 330px) and (max-width: 399px) {
-  .btn_fonct .btn_fonct_theme .btnopt {
-    margin-left: 10%;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 499px) {
-  .btn_fonct .btn_fonct_theme .btnopt {
-    margin-left: 15%;
-  }
-}
-@media only screen and (min-width: 500px) and (max-width: 599px) {
-  .btn_fonct .btn_fonct_theme .btnopt {
-    margin-left: 20%;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 699px) {
-  .btn_fonct .btn_fonct_theme .btnopt {
-    margin-left: 20%;
-  }
-}
-@media only screen and (min-width: 700px) and (max-width: 799px) {
-  .btn_fonct .btn_fonct_theme .btnopt {
-    margin-left: 22%;
-  }
-}
-@media only screen and (min-width: 800px) and (max-width: 999px) {
-  .btn_fonct .btn_fonct_theme .btnopt {
-    margin-left: 25%;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .btn_fonct .btn_fonct_theme .btnopt {
-    margin-left: 30%;
-  }
-}
-@media only screen and (min-width: 599px) and (max-width: 799px) {
-  .btn_fonct .btn_fonct_theme {
-    font-size: 15px;
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .btn_fonct .btn_fonct_theme {
-    font-size: 16px;
-    font-size: 1.6rem;
-  }
+.btn_fonct .btn_fonct_theme .btnopt {
+  flex-basis: 98%;
 }
 .btn_fonct .btn_fonct_theme:hover {
   outline: unset;
@@ -752,47 +531,6 @@ header .entete_logo {
 }
 .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
   margin-right: 0px;
-  /*padding-left:10px;*/
-}
-@media only screen and (max-width: 329px) {
-  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
-    padding-left: 10px;
-  }
-}
-@media only screen and (min-width: 330px) and (max-width: 399px) {
-  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
-    padding-left: 15px;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 499px) {
-  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
-    padding-left: 30px;
-  }
-}
-@media only screen and (min-width: 500px) and (max-width: 599px) {
-  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
-    padding-left: 35px;
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 699px) {
-  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
-    padding-left: 40px;
-  }
-}
-@media only screen and (min-width: 700px) and (max-width: 799px) {
-  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
-    padding-left: 50px;
-  }
-}
-@media only screen and (min-width: 800px) and (max-width: 899px) {
-  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
-    padding-left: 60px;
-  }
-}
-@media only screen and (min-width: 900px) {
-  .btn_fonct .btn_fonct_theme .fa-mobile-alt::before, .btn_fonct .btn_fonct_theme .fa-list-ul::before, .btn_fonct .btn_fonct_theme .fa-store::before {
-    padding-left: 70px;
-  }
 }
 
 /** restaurants **/
@@ -860,12 +598,6 @@ header .entete_logo {
   box-shadow: 2px 2px 6px grey;
   margin-bottom: 15px;
   margin-bottom: 1.5rem;
-  /*a:hover {
-      .coeur {
-         color:$colour-primary;
-         text-shadow: -1px 0 $colour-primary, 0 1px $colour-primary, 1px 0 $colour-primary, 0 -1px $colour-primary;
-      }                       
-  }*/
 }
 @media only screen and (min-width: 650px) {
   .restaurants .restaurant1 .carterest {
@@ -883,30 +615,6 @@ header .entete_logo {
   width: 100%;
   height: 120px;
   height: 12rem;
-  /*@media only screen and (min-width:650px) and (max-width: 849px) {
-      height:220px;
-      height:22rem;
-  }
-  @media only screen and (min-width:850px) and (max-width: 1049px) {
-      height:240px;
-      height:24rem;
-  }
-  @media only screen and (min-width:1050px) and (max-width: 1249px) {
-      height:280px;
-      height:28rem;
-  } 
-  @media only screen and (min-width:1250px) and (max-width: 1449px) {
-      height:320px;
-      height:32rem;
-  }  
-  @media only screen and (min-width:1450px) and (max-width: 1599px) {
-      height:360px;
-      height:36rem;
-  } 
-  @media only screen and (min-width:1600px) {
-      height:400px;
-      height:40rem;
-  } */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 1rem;
@@ -971,30 +679,6 @@ header .entete_logo {
   width: 100%;
   height: 120px;
   height: 12rem;
-  /*@media only screen and (min-width:650px) and (max-width: 849px) {
-      height:220px;
-      height:22rem;
-  }
-  @media only screen and (min-width:850px) and (max-width: 1049px) {
-      height:240px;
-      height:24rem;
-  }
-  @media only screen and (min-width:1050px) and (max-width: 1249px) {
-      height:280px;
-      height:28rem;
-  }
-  @media only screen and (min-width:1250px) and (max-width: 1449px) {
-      height:320px;
-      height:32rem;
-  } 
-  @media only screen and (min-width:1450px) and (max-width: 1599px) {
-      height:360px;
-      height:36rem;
-  } 
-  @media only screen and (min-width:1600px) {
-      height:400px;
-      height:40rem;
-  } */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 1rem;
@@ -1046,30 +730,6 @@ header .entete_logo {
   width: 100%;
   height: 120px;
   height: 12rem;
-  /*@media only screen and (min-width:650px) and (max-width: 849px) {
-      height:220px;
-      height:22rem;
-  }
-  @media only screen and (min-width:850px) and (max-width: 1049px) {
-      height:240px;
-      height:24rem;
-  } 
-  @media only screen and (min-width:1050px) and (max-width: 1249px) {
-      height:280px;
-      height:28rem;
-  }
-  @media only screen and (min-width:1250px) and (max-width: 1449px) {
-      height:320px;
-      height:32rem;
-  } 
-  @media only screen and (min-width:1450px) and (max-width: 1599px) {
-      height:360px;
-      height:36rem;
-  }
-  @media only screen and (min-width:1600px) {
-      height:400px;
-      height:40rem;
-  }   */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 1rem;
@@ -1121,30 +781,6 @@ header .entete_logo {
   width: 100%;
   height: 120px;
   height: 12rem;
-  /*@media only screen and (min-width:650px) and (max-width: 849px) {
-      height:220px;
-      height:22rem;
-  }
-  @media only screen and (min-width:850px) and (max-width: 1049px) {
-      height:240px;
-      height:24rem;
-  }
-  @media only screen and (min-width:1050px) and (max-width: 1249px) {
-      height:280px;
-      height:28rem;
-  }
-  @media only screen and (min-width:1250px) and (max-width: 1449px) {
-      height:320px;
-      height:32rem;
-  }
-  @media only screen and (min-width:1450px) and (max-width: 1599px) {
-      height:360px;
-      height:36rem;
-  } 
-  @media only screen and (min-width:1600px) {
-      height:400px;
-      height:40rem;
-  }  */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 1rem;
@@ -1219,15 +855,16 @@ header .entete_logo {
   position: absolute;
   right: 20px;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 .restaurants .restaurant1 .carterest a .descrimgr .coeur:hover {
-  color: #9356DC;
-  text-shadow: -1px 0 #9356DC, 0 1px #9356DC, 1px 0 #9356DC, 0 -1px #9356DC;
   animation-name: remplissagecoeur;
   animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-fill-mode: both;
+  /*text-shadow:unset;*/
 }
 
 footer {
@@ -1335,15 +972,31 @@ footer .menu_footer ul li .fa-hands-helping::before {
 @keyframes remplissagecoeur {
   0% {
     color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  50% {
+    opacity: 0.4;
+    -webkit-text-stroke: 0px;
+    background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   100% {
-    color: #9356DC;
-    text-shadow: -1px 0 #9356DC, 0 1px #9356DC, 1px 0 #9356DC, 0 -1px #9356DC;
+    opacity: 1;
+    -webkit-text-stroke: 0px;
+    background: -moz-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
+    background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 /** page carte restaurant la palette du gout  **/
-/**                                          **/
 /**                                          **/
 .corps_resto {
   width: 100%;
@@ -1459,56 +1112,58 @@ a.affiche_fleche {
   border-top-right-radius: 3rem;
   position: relative;
   top: -20px;
-  /*envelop_theme_plat*/
 }
 .carte_menu .nom_restaurant {
   padding-top: 15px;
   padding-top: 1.5rem;
   margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  /*.fa-heart::before {
+      margin-left:30px;
+      margin-left:3rem;
+      position:absolute;
+      top:20px;
+      top:2rem;
+      right:10%;
+  }*/
 }
 .carte_menu .nom_restaurant h1 {
   font-family: 'Shrikhand','Trebuchet MS', Arial, sans-serif;
   font-weight: 500;
-  /*text-align:center;*/
   position: relative;
-  /*left:5%;*/
 }
 .carte_menu .nom_restaurant h1::first-letter {
   text-transform: capitalize;
 }
-.carte_menu .nom_restaurant .fa-heart::before {
-  margin-left: 30px;
-  margin-left: 3rem;
-  position: absolute;
-  top: 20px;
-  top: 2rem;
-  right: 10%;
-}
 .carte_menu .nom_restaurant .fa-heart {
+  cursor: pointer;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 .carte_menu .nom_restaurant .fa-heart:hover {
-  color: #9356DC;
-  text-shadow: -1px 0 #9356DC, 0 1px #9356DC, 1px 0 #9356DC, 0 -1px #9356DC;
+  /*color:$colour-primary;*/
+  /*text-shadow: -1px 0 $colour-primary, 0 1px $colour-primary, 1px 0 $colour-primary, 0 -1px $colour-primary;*/
   animation-name: remplissagecoeur;
   animation-duration: 1s;
   animation-timing-function: ease-in;
   animation-fill-mode: both;
 }
 .carte_menu .envelop_theme_plat {
-  /** ajout overflow **/
   overflow: hidden;
-  /**               **/
   position: relative;
   padding-bottom: 20px;
   padding-bottom: 2rem;
-  /*carte_theme_plat*/
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat {
   margin-left: 5%;
-  /*envelop_carte_theme_plat_contenu*/
-  /*envelop_carte_theme_plat_contenu:hover*/
+  margin-right: 5%;
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .titre_carte {
   text-transform: uppercase;
@@ -1525,32 +1180,27 @@ a.affiche_fleche {
   position: relative;
   margin-bottom: 10px;
   margin-bottom: 1rem;
-  /** apparition progressive des cartes menu **/
-  /*@include apparition(apparitionc1,1000ms,ease-in,forward,10ms);*/
-  /**/
-  /*a {*/
-  /*a remplace par lien_carte_theme_plat_contenu*/
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu {
   cursor: pointer;
   text-decoration: none;
   color: black;
-  /*position:relative;*/
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background: white;
-  width: 94%;
+  width: 100%;
   height: 60px;
   border-radius: 10px;
   border-radius: 1rem;
   box-shadow: 2px 2px 6px grey;
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat {
-  margin-left: 4%;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  width: 100%;
+  min-width: 0;
+  padding: 1rem;
   position: relative;
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat1p {
@@ -1560,85 +1210,56 @@ a.affiche_fleche {
   text-transform: capitalize;
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p .lplat2p {
+  min-width: 0;
   text-overflow: ellipsis;
-  /*width: 40px;*/
   overflow: hidden;
   white-space: nowrap;
 }
-@media only screen and (max-width: 319px) {
-  .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p {
-    width: 180px;
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 360px) {
-  .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p {
-    width: 200px;
-  }
-}
-@media only screen and (min-width: 361px) and (max-width: 400px) {
-  .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p {
-    width: 240px;
-  }
-}
-.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p::first-letter {
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p .lplat2p::first-letter {
   text-transform: capitalize;
 }
-.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .tarif {
-  position: absolute;
-  bottom: 5px;
-  right: 15px;
-  bottom: 0.5rem;
-  right: 1.5rem;
+.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_contenu .plat .plat2p .tarif {
+  font-weight: bold;
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_select {
-  width: 50px;
-  width: 5rem;
+  width: 0rem;
+  overflow: hidden;
+  position: relative;
   height: 60px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 2px 2px 6px grey;
   background: #99E2D0;
-  position: absolute;
-  top: 0px;
-  right: -500px;
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu .lien_carte_theme_plat_contenu .carte_theme_plat_select p {
-  text-align: center;
-  padding-top: 30%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
   color: white;
   font-size: 24px;
   font-size: 2.4rem;
   font-weight: bold;
 }
-.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_contenu .plat2p {
-  /* largeur du texte à partir duquel apparait  ... en overflow */
-  /*width:200px;
-  width:20rem;*/
-}
-@media only screen and (min-width: 320px) and (max-width: 400px) {
-  .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_contenu .plat2p {
-    width: 200px !important;
-    width: 20rem !important;
-  }
-}
-.carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_contenu .plat .tarif {
-  right: 55px;
-  right: 5.5rem;
-}
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_select {
   animation-name: deplacement;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .envelop_carte_theme_plat_contenu:hover .carte_theme_plat_select .fa-check-circle {
   animation-name: rotationicone;
-  animation-duration: 1s;
-  animation-timing-function: ease;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
 
-/*carte_menu*/
 .anim_carte1 {
   animation-name: apparitionc1;
   animation-duration: 1000ms;
@@ -1660,173 +1281,15 @@ a.affiche_fleche {
   animation-delay: 0ms;
 }
 
-@media only screen and (max-width: 489px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 20px;
-    }
+@keyframes deplacement {
+  0% {
+    width: 0rem;
   }
-}
-@media only screen and (min-width: 490px) and (max-width: 599px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 30px;
-    }
+  50% {
+    width: 2.5rem;
   }
-}
-@media only screen and (min-width: 600px) and (max-width: 699px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 35px;
-    }
-  }
-}
-@media only screen and (min-width: 700px) and (max-width: 799px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 40px;
-    }
-  }
-}
-@media only screen and (min-width: 800px) and (max-width: 899px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 45px;
-    }
-  }
-}
-@media only screen and (min-width: 900px) and (max-width: 999px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 50px;
-    }
-  }
-}
-@media only screen and (min-width: 1000px) and (max-width: 1099px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 55px;
-    }
-  }
-}
-@media only screen and (min-width: 1100px) and (max-width: 1199px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 60px;
-    }
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1299px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 65px;
-    }
-  }
-}
-@media only screen and (min-width: 1300px) and (max-width: 1399px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 70px;
-    }
-  }
-}
-@media only screen and (min-width: 1400px) and (max-width: 1499px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 75px;
-    }
-  }
-}
-@media only screen and (min-width: 1500px) and (max-width: 1599px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 80px;
-    }
-  }
-}
-@media only screen and (min-width: 1599px) {
-  @keyframes deplacement {
-    0% {
-      right: -30px;
-    }
-    50% {
-      right: 0px;
-    }
-    100% {
-      right: 85px;
-    }
+  100% {
+    width: 5rem;
   }
 }
 @keyframes rotationicone {
@@ -1839,7 +1302,6 @@ a.affiche_fleche {
     transform: rotate(360deg);
   }
 }
-/**/
 @keyframes apparitionc1 {
   0% {
     opacity: 0;

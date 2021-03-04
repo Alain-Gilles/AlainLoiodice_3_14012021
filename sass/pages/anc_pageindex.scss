@@ -8,7 +8,15 @@ header {
         top:0.8rem;
         color:black;
     }
-    
+    /**/
+    /* la fleche qui sert de retour sur page index*/
+    /* n'est pas affichée sur page index */
+    /* pour les autres pages il suffira de supprimer de code */
+    /* pour activer le lien et voir apparaitre la fleche */
+    /**/
+    /*a.affiche_fleche {
+        display:none;
+    }*/
     .entete_logo {
         display:flex;
         flex-direction:row;
@@ -89,6 +97,26 @@ header {
 
     .btn_explorer {
         @include boutonsindexcarte;
+        /*text-align:center;
+        margin-bottom:20px;
+        margin-bottom:2rem;
+        .btn {
+        padding: $btn-paddingv $btn-paddingh;
+        @include border(lighten(grey,20),10rem);
+        color: $btn-color;
+        font-weight: bold;
+        background:linear-gradient(to bottom, lighten($colour-secondary,0) 10%, lighten($colour-primary,0) 90%);
+        box-shadow:1px 2px 5px lighten(grey,20);
+        box-shadow:0.1rem 0.2rem 0.5rem lighten(grey,20);
+        cursor: pointer;
+        outline: unset;
+        &:hover{
+        background:linear-gradient(to bottom, lighten($colour-secondary,5) 10%, lighten($colour-primary,10) 90%);
+        outline: unset;
+        box-shadow:3px 3px 10px lighten(grey,20);
+        box-shadow:0.3rem 0.3rem 1rem lighten(grey,20);
+        }
+        }*/
     }
 }
 .fonctionnement {
@@ -97,6 +125,8 @@ header {
         margin-top: 2rem;
         margin-bottom: 20px;
         margin-bottom: 2rem;
+        /*margin-left: 5px;
+        margin-left: 0.5rem;*/
         padding-left:10px;
         padding-left:1rem;
         @media only screen and (min-width:650px) {
@@ -125,9 +155,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content:center;
-    /**/
-    align-items:baseline;
-    /**/
     .btn_fonct_chiffre {
         font-size: 11px;
         font-size: 1.1rem;
@@ -142,20 +169,142 @@ header {
         text-align:center;
         padding:5px;
         padding:0.5rem;
-        margin-right:-1.5%;
-        z-index:1;
+        position:absolute;
+        bottom:28px;
+        bottom:2.8rem;
+        left:15px;
+        left:1.5rem;
+        @media only screen and (min-width:400px) and (max-width: 449px) {    
+            left:20px;
+            left:2.0rem;
+        }
+        @media only screen and (min-width:450px) and (max-width: 499px) {    
+            left:25px;
+            left:2.5rem;
+        }
+        @media only screen and (min-width:500px) and (max-width: 599px) {    
+            left:30px;
+            left:3rem;
+        }
+        @media only screen and (min-width:600px) and (max-width: 649px) {    
+            left:33px;
+            left:3.3rem;
+        }
+        @media only screen and (min-width:650px) and (max-width: 749px) {    
+            left:40px;
+            left:4rem;
+        } 
+        @media only screen and (min-width:750px) and (max-width: 829px) {    
+            left:45px;
+            left:4.5rem;
+        }
+        @media only screen and (min-width:830px) and (max-width: 899px) {    
+            left:50px;
+            left:5rem;
+        }
+        @media only screen and (min-width:900px) and (max-width: 949px) {    
+            left:55px;
+            left:5.5rem;
+        } 
+        @media only screen and (min-width:950px) and (max-width: 999px) {    
+            left:60px;
+            left:6rem;
+        }
+        @media only screen and (min-width:1000px) and (max-width: 1099px) {    
+            left:70px;
+            left:7rem;
+        }  
+        @media only screen and (min-width:1100px) and (max-width: 1199px) {    
+            left:75px;
+            left:7.5rem;
+        }
+        @media only screen and (min-width:1200px) and (max-width: 1269px) {    
+            left:80px;
+            left:8rem;
+        }
+        /*
+        Attention sur wrapper definition d'un média queries avec pour min-width 1270px un width de 90%  
+        La marge n'est plus calculée à partir de wrapper = 100% mais de wrapper = 90% du body
+        */
+        @media only screen and (min-width:1270px) and (max-width: 1339px) {    
+            left:65px;
+            left:6.5rem;
+        }
+        @media only screen and (min-width:1340px) and (max-width: 1399px) {    
+            left:70px;
+            left:7rem;
+        } 
+        @media only screen and (min-width:1400px) and (max-width: 1499px) {    
+            left:75px;
+            left:7.5rem;
+        } 
+        @media only screen and (min-width:1500px) and (max-width: 1599px) {    
+            left:80px;
+            left:8rem;
+        }
+        @media only screen and (min-width:1599px) { 
+            left:80px;
+            left:8rem;
+        }                                                    
     }
     .btn_fonct_theme {
         width:85%;
         font-size: 14px;
         font-size: 1.4rem;
-        display:flex;
-        flex-direction: row;
-        justify-content:space-between;
+        text-align:justify;
+        /*****************/
         background: #EFEFEF;
-        .btnopt {
-            flex-basis:98%;
+        /*****************/
+        @media only screen and (max-width: 329px) {
+            .btnopt {
+             margin-left:5%;
+            }
         }
+        @media only screen and (min-width:330px) and (max-width: 399px) {
+            .btnopt {
+             margin-left:10%;
+            }
+        }
+        @media only screen and (min-width:400px) and (max-width: 499px) {
+            .btnopt {
+             margin-left:15%;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width: 599px) {
+            .btnopt {
+             margin-left:20%;
+            }
+        }
+        @media only screen and (min-width:600px) and (max-width: 699px) {
+            .btnopt {
+             margin-left:20%;
+            }
+        }
+        @media only screen and (min-width:700px) and (max-width: 799px) {
+            .btnopt {
+             margin-left:22%;
+            }
+        }
+        @media only screen and (min-width:800px) and (max-width: 999px) {
+            .btnopt {
+             margin-left:25%;
+            }
+        }
+        @media only screen and (min-width:1000px) {
+            .btnopt {
+             margin-left:30%;
+            }
+        }
+        
+        @media only screen and (min-width:599px) and (max-width: 799px) {
+            font-size: 15px;
+            font-size: 1.5rem;
+        }
+        @media only screen and (min-width:800px) {
+            font-size: 16px;
+            font-size: 1.6rem;
+        }
+
         margin-bottom:15px;
         margin-bottom:1.5rem;
         @include border(lighten(gray,20),1.8rem);
@@ -163,6 +312,8 @@ header {
         padding: 2rem 2.5rem;
         color: black;
         font-weight: 600;
+        /*   */
+        /*background:linear-gradient(to bottom, $colour-secondary 90, lighten($colour-primary,50) 10);*/
         box-shadow:2px 2px 0px gray;
         box-shadow:0.2rem 0.2rem 1rem gray;
         cursor: pointer;
@@ -195,9 +346,68 @@ header {
                 color: darken($colour-primary,20)
             }
         }
+        /*&:focus{
+            outline: unset;
+            background: lighten($colour-primary,30);
+            .fa-mobile-alt {
+                color: darken($colour-primary,20)
+            }
+            .fa-list-ul {
+                color: darken($colour-primary,20)
+            }
+            
+            .fa-store {
+                color: darken($colour-primary,20)
+            }
+        }*/
+
         .fa-mobile-alt::before, .fa-list-ul::before, .fa-store::before {
             margin-right:0px;
+            /*padding-left:10px;*/
+            @media only screen and (max-width: 329px) {
+                padding-left:10px;
+            }
+            @media only screen and (min-width:330px) and (max-width: 399px) {
+                padding-left:15px;
+            }
+            @media only screen and (min-width:400px) and (max-width: 499px) {
+                padding-left:30px;
+            }           
+            @media only screen and (min-width:500px) and (max-width: 599px) {
+                padding-left:35px;
+            }
+            @media only screen and (min-width:600px) and (max-width: 699px) {
+                padding-left:40px;
+            }
+            @media only screen and (min-width:700px) and (max-width: 799px) {
+                padding-left:50px;
+            }
+            @media only screen and (min-width:800px) and (max-width: 899px) {
+                padding-left:60px;
+            }
+            @media only screen and (min-width:900px) {
+                padding-left:70px;
+            }
         }
+
+        /*.fa-mobile-alt::before {
+            margin-right:18px;
+            margin-right:1.8rem;
+            margin-right:0px;
+            padding-left:10px;
+        }
+        .fa-list-ul::before {
+            margin-right:18px;
+            margin-right:1.8rem;
+            margin-right:0px;
+            padding-left:10px;                  
+        }
+        .fa-store::before {
+            margin-right:18px;
+            margin-right:1.8rem;
+            margin-right:0px;
+            padding-left:10px;
+        }*/
     }
 }
 
@@ -293,6 +503,31 @@ header {
                         height:220px;
                         height:22rem;
                     } 
+
+                    /*@media only screen and (min-width:650px) and (max-width: 849px) {
+                        height:220px;
+                        height:22rem;
+                    }
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:240px;
+                        height:24rem;
+                    }
+                    @media only screen and (min-width:1050px) and (max-width: 1249px) {
+                        height:280px;
+                        height:28rem;
+                    } 
+                    @media only screen and (min-width:1250px) and (max-width: 1449px) {
+                        height:320px;
+                        height:32rem;
+                    }  
+                    @media only screen and (min-width:1450px) and (max-width: 1599px) {
+                        height:360px;
+                        height:36rem;
+                    } 
+                    @media only screen and (min-width:1600px) {
+                        height:400px;
+                        height:40rem;
+                    } */                            
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -346,6 +581,31 @@ header {
                         height:220px;
                         height:22rem;
                     } 
+                    
+                    /*@media only screen and (min-width:650px) and (max-width: 849px) {
+                        height:220px;
+                        height:22rem;
+                    }
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:240px;
+                        height:24rem;
+                    }
+                    @media only screen and (min-width:1050px) and (max-width: 1249px) {
+                        height:280px;
+                        height:28rem;
+                    }
+                    @media only screen and (min-width:1250px) and (max-width: 1449px) {
+                        height:320px;
+                        height:32rem;
+                    } 
+                    @media only screen and (min-width:1450px) and (max-width: 1599px) {
+                        height:360px;
+                        height:36rem;
+                    } 
+                    @media only screen and (min-width:1600px) {
+                        height:400px;
+                        height:40rem;
+                    } */                                      
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -386,6 +646,31 @@ header {
                         height:220px;
                         height:22rem;
                     } 
+
+                    /*@media only screen and (min-width:650px) and (max-width: 849px) {
+                        height:220px;
+                        height:22rem;
+                    }
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:240px;
+                        height:24rem;
+                    } 
+                    @media only screen and (min-width:1050px) and (max-width: 1249px) {
+                        height:280px;
+                        height:28rem;
+                    }
+                    @media only screen and (min-width:1250px) and (max-width: 1449px) {
+                        height:320px;
+                        height:32rem;
+                    } 
+                    @media only screen and (min-width:1450px) and (max-width: 1599px) {
+                        height:360px;
+                        height:36rem;
+                    }
+                    @media only screen and (min-width:1600px) {
+                        height:400px;
+                        height:40rem;
+                    }   */                                 
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -426,6 +711,31 @@ header {
                         height:220px;
                         height:22rem;
                     } 
+
+                    /*@media only screen and (min-width:650px) and (max-width: 849px) {
+                        height:220px;
+                        height:22rem;
+                    }
+                    @media only screen and (min-width:850px) and (max-width: 1049px) {
+                        height:240px;
+                        height:24rem;
+                    }
+                    @media only screen and (min-width:1050px) and (max-width: 1249px) {
+                        height:280px;
+                        height:28rem;
+                    }
+                    @media only screen and (min-width:1250px) and (max-width: 1449px) {
+                        height:320px;
+                        height:32rem;
+                    }
+                    @media only screen and (min-width:1450px) and (max-width: 1599px) {
+                        height:360px;
+                        height:36rem;
+                    } 
+                    @media only screen and (min-width:1600px) {
+                        height:400px;
+                        height:40rem;
+                    }  */                                    
                     border-top-left-radius:10px;
                     border-top-right-radius:10px;
                     border-top-left-radius:1rem;
@@ -458,26 +768,33 @@ header {
                         }
                     }
                     .coeur {
-                            
                         padding-right:10px;
                         padding-right:1rem;
                         position:absolute;
                         right:20px;
                         color:white;
-                        /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-                        -webkit-text-stroke: 0.5px;
-                        -webkit-text-stroke-color:black;
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
                     }
                     .coeur:hover {
+                        color:$colour-primary;
+                        text-shadow: -1px 0 $colour-primary, 0 1px $colour-primary, 1px 0 $colour-primary, 0 -1px $colour-primary;
                         
+
                         animation-name:remplissagecoeur;
                         animation-duration:1s;
                         animation-timing-function:ease-in;
                         animation-fill-mode:both;
-                        /*text-shadow:unset;*/                                       
+
+                        
                     }
                 }
             }
+            /*a:hover {
+                .coeur {
+                   color:$colour-primary;
+                   text-shadow: -1px 0 $colour-primary, 0 1px $colour-primary, 1px 0 $colour-primary, 0 -1px $colour-primary;
+                }                       
+            }*/
         }
     }
 }
@@ -570,29 +887,10 @@ footer {
 @keyframes remplissagecoeur {
     0% {
         color:white;
-       
-    }
-   50% {
-        opacity:0.4;
-        -webkit-text-stroke: 0px;
-        background:-moz-linear-gradient(top, $colour-primary 0%, $colour-secondary 100%); 
-        background: -webkit-linear-gradient(top, $colour-primary 0%, $colour-secondary 100%); 
-        background: linear-gradient(to bottom, $colour-primary 0%, $colour-secondary 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color:transparent;
-
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
     100% {
-        opacity:1;
-        -webkit-text-stroke: 0px;
-        background:-moz-linear-gradient(top, $colour-primary 0%, $colour-secondary 100%); 
-        background: -webkit-linear-gradient(top, $colour-primary 0%, $colour-secondary 100%); 
-        background: linear-gradient(to bottom, $colour-primary 0%, $colour-secondary 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color:transparent;
+        color:$colour-primary;
+        text-shadow: -1px 0 $colour-primary, 0 1px $colour-primary, 1px 0 $colour-primary, 0 -1px $colour-primary;
     }
 }
