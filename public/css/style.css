@@ -21,7 +21,9 @@ body {
 
 h1 {
   font-family: 'Roboto' , Arial, sans-serif;
-  font-weight: 700;
+  /*font-family: 'Shrikhand', sans-serif;*/
+  /*font-weight: 700;*/
+  font-weight: 1000;
   font-size: 20px;
   font-size: 2.0rem;
   font-style: normal;
@@ -328,6 +330,7 @@ header .entete_logo {
   font-weight: bold;
   font-size: 15px;
   font-size: 1.5rem;
+  font-family: 'Roboto';
   border: 0;
   outline: unset;
   text-align: center;
@@ -366,6 +369,7 @@ header .entete_logo {
   border-radius: 10rem;
   color: white;
   font-weight: bold;
+  font-family: 'Roboto';
   background: linear-gradient(to bottom, #ff79da 10%, #9356dc 90%);
   box-shadow: 1px 2px 5px #b3b3b3;
   box-shadow: 0.1rem 0.2rem 0.5rem #b3b3b3;
@@ -455,6 +459,7 @@ header .entete_logo {
   padding: 2rem 2.5rem;
   color: black;
   font-weight: 600;
+  font-family: 'Roboto';
   box-shadow: 2px 2px 0px gray;
   box-shadow: 0.2rem 0.2rem 1rem gray;
   cursor: pointer;
@@ -974,6 +979,7 @@ footer .menu_footer ul li .fa-hands-helping::before {
   border-radius: 10rem;
   color: white;
   font-weight: bold;
+  font-family: 'Roboto';
   background: linear-gradient(to bottom, #ff79da 10%, #9356dc 90%);
   box-shadow: 1px 2px 5px #b3b3b3;
   box-shadow: 0.1rem 0.2rem 0.5rem #b3b3b3;

@@ -21,6 +21,7 @@
         @include border(lighten(grey,20),10rem);
         color: $btn-color;
         font-weight: bold;
+        font-family: 'Roboto';
         background:linear-gradient(to bottom, lighten($colour-secondary,0) 10%, lighten($colour-primary,0) 90%);
         box-shadow:1px 2px 5px lighten(grey,20);
         box-shadow:0.1rem 0.2rem 0.5rem lighten(grey,20);
