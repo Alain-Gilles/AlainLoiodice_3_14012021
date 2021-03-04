@@ -34,19 +34,3 @@
         }
         }
 }
-/*@mixin btn ($colourprimary:$colour-primary,$coloursecondary:$colour-secondary,$pourcentagesecond:10%,$pourcentageprimary:90%,$pourcentagelighten:10) {
-    padding: $btn-paddingv $btn-paddingh;
-    @include border;
-    color: $btn-color;
-    font-weight: bold;
-    background:linear-gradient(to bottom, $coloursecondary $pourcentagesecond, lighten($colourprimary,$pourcentagelighten) $pourcentageprimary);
-    box-shadow:2px 2px 0px $colour-primary;
-    box-shadow:0.2rem 0.2rem 1rem $colour-primary;
-    cursor: pointer;
-    outline: unset;
-    &:hover{
-        background: $colourprimary;
-        
-        outline: unset;
-    }
-}*/ 
