@@ -570,7 +570,6 @@ footer {
 @keyframes remplissagecoeur {
     0% {
         color:white;
-       
     }
    50% {
         opacity:0.4;
@@ -580,7 +579,7 @@ footer {
         background: linear-gradient(to bottom, $colour-primary 0%, $colour-secondary 100%);
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        background-clip: text;
+        /*background-clip: text;*/
         -webkit-text-fill-color:transparent;
 
     }
@@ -592,7 +591,7 @@ footer {
         background: linear-gradient(to bottom, $colour-primary 0%, $colour-secondary 100%);
         -webkit-background-clip: text;
         -moz-background-clip: text;
-        background-clip: text;
+        /*background-clip: text;*/
         -webkit-text-fill-color:transparent;
     }
 }

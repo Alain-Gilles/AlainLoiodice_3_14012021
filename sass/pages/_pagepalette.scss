@@ -97,14 +97,6 @@ a.affiche_fleche {
                 text-transform:capitalize;
             }
         }
-        /*.fa-heart::before {
-            margin-left:30px;
-            margin-left:3rem;
-            position:absolute;
-            top:20px;
-            top:2rem;
-            right:10%;
-        }*/
         .fa-heart {
             cursor: pointer;
             color:white;
@@ -129,18 +121,22 @@ a.affiche_fleche {
         .carte_theme_plat {
             margin-left:5%;
             margin-right:5%;
-            
-            .titre_carte {
-                text-transform: uppercase;
+            .titre_carte{
+                display:inline-block;
+                
+                p{
+                    text-transform: uppercase;
+                }
+                .soulignement {
+                    width:60%;
+                    height:3px;
+                    height:0.3rem;
+                    background: $colour-tertiaire;
+                    margin-bottom:10px;
+                    margin-bottom:1rem;
+                }
             }
-            .soulignement {
-                width:10%;
-                height:3px;
-                height:0.3rem;
-                background: $colour-tertiaire;
-                margin-bottom:10px;
-                margin-bottom:1rem;
-            }
+
             .envelop_carte_theme_plat_contenu {
                 
                 position:relative;

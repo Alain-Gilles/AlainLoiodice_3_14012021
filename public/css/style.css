@@ -981,7 +981,7 @@ footer .menu_footer ul li .fa-hands-helping::before {
     background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
+    /*background-clip: text;*/
     -webkit-text-fill-color: transparent;
   }
   100% {
@@ -992,7 +992,7 @@ footer .menu_footer ul li .fa-hands-helping::before {
     background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
+    /*background-clip: text;*/
     -webkit-text-fill-color: transparent;
   }
 }
@@ -1123,14 +1123,6 @@ a.affiche_fleche {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  /*.fa-heart::before {
-      margin-left:30px;
-      margin-left:3rem;
-      position:absolute;
-      top:20px;
-      top:2rem;
-      right:10%;
-  }*/
 }
 .carte_menu .nom_restaurant h1 {
   font-family: 'Shrikhand','Trebuchet MS', Arial, sans-serif;
@@ -1166,10 +1158,13 @@ a.affiche_fleche {
   margin-right: 5%;
 }
 .carte_menu .envelop_theme_plat .carte_theme_plat .titre_carte {
+  display: inline-block;
+}
+.carte_menu .envelop_theme_plat .carte_theme_plat .titre_carte p {
   text-transform: uppercase;
 }
-.carte_menu .envelop_theme_plat .carte_theme_plat .soulignement {
-  width: 10%;
+.carte_menu .envelop_theme_plat .carte_theme_plat .titre_carte .soulignement {
+  width: 60%;
   height: 3px;
   height: 0.3rem;
   background: #99E2D0;
