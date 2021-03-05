@@ -144,6 +144,12 @@ header {
         padding:5px;
         padding:0.5rem;
         margin-right:-1.5%;
+        @media only screen and (max-width:499px) {
+            margin-right:-3%;
+        }
+        @media only screen and (min-width:500px) and (max-width: 699px) {
+            margin-right:-2%;
+        }
         z-index:1;
     }
     .btn_fonct_theme {
