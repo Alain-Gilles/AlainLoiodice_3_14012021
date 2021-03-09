@@ -135,6 +135,19 @@ a.affiche_fleche {
             }
 
             .envelop_carte_theme_plat_contenu {
+
+                .carte_theme_plat_select {
+                    animation-name:deplacement_inv;
+                    animation-duration:0.5s;
+                    animation-timing-function:ease-in-out;
+                    animation-fill-mode:both;
+                    .fa-check-circle {
+                        animation-name:rotationicone_inv;
+                        animation-duration:0.5s;
+                        animation-timing-function:ease-in-out;
+                        animation-fill-mode:both;
+                    }
+                }
                 
                 position:relative;
                 margin-bottom:10px;
@@ -210,12 +223,12 @@ a.affiche_fleche {
 
                 .carte_theme_plat_select {
                     animation-name:deplacement;
-                    animation-duration:0.3s;
+                    animation-duration:0.5s;
                     animation-timing-function:ease-in-out;
                     animation-fill-mode:both;
                     .fa-check-circle {
                         animation-name:rotationicone;
-                        animation-duration:0.3s;
+                        animation-duration:0.5s;
                         animation-timing-function:ease-in-out;
                         animation-fill-mode:both;
                     }
@@ -238,6 +251,17 @@ a.affiche_fleche {
     @include apparition(apparitionc1,3000ms,ease-in,forward,0ms);
 }
 
+@keyframes deplacement_inv{
+    0% {
+        width:5rem;
+    }
+    50% {
+        width:2.5rem;
+    }
+    100% {
+        width:0rem;
+    }
+}
 
 @keyframes deplacement{
     0% {
@@ -258,6 +282,16 @@ a.affiche_fleche {
     100% {
         transform-origin: center;
         transform: rotate(360deg);
+    }
+}
+@keyframes rotationicone_inv{
+    0% {
+        transform-origin: center;
+        transform: rotate(360deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(0deg);
     }
 }
 @keyframes apparitionc1 {    
