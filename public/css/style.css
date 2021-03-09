@@ -79,10 +79,6 @@ body {
   margin: 0 auto;
   background-color: white;
 }
-@media only screen and (min-width: 1270px) {
-  .page_principale {
-    width: 90%;
-  }
 
 .loader {
   position: absolute;
