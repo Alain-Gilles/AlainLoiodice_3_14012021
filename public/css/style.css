@@ -441,6 +441,11 @@ header .entete_logo {
     margin-right: -2%;
   }
 }
+@media only screen and (min-width: 1199px) {
+  .btn_fonct .btn_fonct_chiffre {
+    margin-right: -1%;
+  }
+}
 .btn_fonct .btn_fonct_theme {
   width: 85%;
   font-size: 14px;
